@@ -57,7 +57,7 @@ def main():
     dataset = dataset[dataset["comment"].str.startswith("No Comments") == False]  # Removes empty comments
 
     # Write the DataFrame to a CSV file
-    dataset.to_csv(EXPORT_FILE)
+    dataset.to_csv(EXPORT_FILE, index=False)
 
 
 if __name__ == "__main__":
