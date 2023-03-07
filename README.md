@@ -14,4 +14,4 @@ review during each semester's performance reviews. This model was originally hyp
 - Python 3.11+
 - Modules in `requirements.txt`
 
-Ramy is goated
+This will cause merge a conflict.
