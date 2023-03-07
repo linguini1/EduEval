@@ -1,0 +1,13 @@
+{
+  "queries": [
+    {
+      "school": "Carleton University",
+      "professors": [
+        "Ramy Gohary",
+        "Eric Hua",
+        "Lynn Marshall",
+        "Cristina Ruiz Martin"
+      ]
+    }
+  ]
+}
