@@ -13,5 +13,3 @@ review during each semester's performance reviews. This model was originally hyp
 ## Requirements
 - Python 3.11+
 - Modules in `requirements.txt`
-
-jad's first commit
