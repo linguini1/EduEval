@@ -6,6 +6,7 @@ import ratemyprofessor
 from ratemyprofessor import School, Professor
 from query import load_queries, Query
 import pandas as pd
+import os
 
 # Constants
 QUERY_FILE: str = "./queries.json"
@@ -45,15 +46,21 @@ def main():
     # Set up dataset
     dataset = pd.DataFrame(columns=COLUMNS)
 
-    # Get desired filename
+    # Get desired filename (only allows unique filenames)
     filename = input("File name for the CSV output: ")
+    overwrite = 'n'
+    while os.path.exists(f"./{filename}.csv") and overwrite == 'n':
+        overwrite = input("Do you want to overwrite that file? (y/n): ")
+        if overwrite == 'y':
+            break
+        filename = input("File name for the CSV output: ")
 
     # Complete all query searches
     try:
         scrape_queries(queries, dataset, log=True)  # Show progress in console
     except (Exception, KeyboardInterrupt):
         # If there is an error, save the current progress
-        print(dataset)
+        pass
 
     # Remove bad data
     dataset = dataset[dataset["comment"].str.len() > MINIMUM_CHARS]  # Can't have too few characters
