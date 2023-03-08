@@ -2,6 +2,7 @@
 __author__ = "Matteo Golin"
 
 # Imports
+import warnings
 import ratemyprofessor
 from googletrans import Translator
 from ratemyprofessor import School, Professor
@@ -54,6 +55,9 @@ def main():
 
     # Creates translator instance
     translator = Translator()
+
+    # Ignore BS4 warnings
+    warnings.filterwarnings("ignore")
 
     # Get desired filename (only allows unique filenames)
     filename = input("File name for the CSV output: ")
