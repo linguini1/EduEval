@@ -15,11 +15,8 @@ EXPORT_FILE: str = "./ratings.csv"
 COLUMNS: list[str] = ["school", "professor", "course", "comment"]
 MINIMUM_CHARS: int = 5
 
-#Creates translator instance
-translator = Translator()
 
-
-def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
+def scrape_queries(queries: list[Query], df: pd.DataFrame, translator: Translator, log: bool = True) -> None:
     """Adds the results of scraping the queries to a Pandas DataFrame."""
 
     for query in queries:
@@ -38,10 +35,12 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> 
 
                 # Add each rating to the DataFrame
                 for rating in professor.get_ratings(course_name=course.name):
-                    transalation = rating.comment
-                    if (translator.detect(transalation).lang != 'en' ): #checks if the language is not English
-                        transalation = translator.translate(transalation) #translates the rating to English
-                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, transalation]
+
+                    comment = rating.comment
+                    if translator.detect(comment).lang != 'en':  # Checks if the language is not English
+                        comment = translator.translate(comment)  # Translates the rating to English
+
+                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, comment]
 
 
 # Main
@@ -52,6 +51,9 @@ def main():
 
     # Set up dataset
     dataset = pd.DataFrame(columns=COLUMNS)
+
+    # Creates translator instance
+    translator = Translator()
 
     # Get desired filename (only allows unique filenames)
     filename = input("File name for the CSV output: ")
@@ -64,8 +66,8 @@ def main():
 
     # Complete all query searches
     try:
-        scrape_queries(queries, dataset, log=True)  # Show progress in console
-    except (Exception, KeyboardInterrupt):
+        scrape_queries(queries, dataset, translator, log=True)  # Show progress in console
+    except (KeyboardInterrupt, ValueError):
         # If there is an error, save the current progress
         pass
 
