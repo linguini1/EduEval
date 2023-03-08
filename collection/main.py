@@ -3,6 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 import ratemyprofessor
+from googletrans import Translator
 from ratemyprofessor import School, Professor
 from query import load_queries, Query
 import pandas as pd
@@ -13,6 +14,9 @@ QUERY_FILE: str = "./queries.json"
 EXPORT_FILE: str = "./ratings.csv"
 COLUMNS: list[str] = ["school", "professor", "course", "comment"]
 MINIMUM_CHARS: int = 5
+
+#Creates translator instance
+translator = Translator()
 
 
 def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
@@ -34,7 +38,10 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> 
 
                 # Add each rating to the DataFrame
                 for rating in professor.get_ratings(course_name=course.name):
-                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, rating.comment]
+                    transalation = rating.comment
+                    if (translator.detect(transalation).lang != 'en' ): #checks if the language is not English
+                        transalation = translator.translate(transalation) #translates the rating to English
+                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, transalation]
 
 
 # Main
@@ -67,7 +74,7 @@ def main():
     dataset = dataset[dataset["comment"].str.startswith("No Comments") == False]  # Removes empty comments
 
     # Write the DataFrame to a CSV file
-    dataset.to_csv(f"./{filename}.csv", index=False)
+    dataset.to_csv(f"./{filename}.csv", index=False, encoding='utf-8')
 
 
 if __name__ == "__main__":
