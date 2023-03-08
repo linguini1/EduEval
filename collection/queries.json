@@ -6,7 +6,30 @@
         "Ramy Gohary",
         "Eric Hua",
         "Lynn Marshall",
-        "Cristina Ruiz Martin"
+        "Cristina Ruiz Martin",
+        "Mengchi Liu", 
+        "Michael Runtz"
+
+      ]
+    }, {
+      "school": "University of Toronto", 
+      "professors": [
+        "Andrew Meyertholen",
+        "Benjamin Wald",
+        "Richard Derryberry", 
+        "Katherine Daignault", 
+        "Sian Patterson", 
+        "Michael Khan"
+      ]
+
+    }, {
+      "school": "University of Ottawa",
+      "professors":[
+        "Sam Alvaro",
+        "Jon Houseman",
+        "Paula Sauveur",
+        "Gordon Lenjosek",
+        "Caroline Petit-Turcotte"
       ]
     }
   ]
