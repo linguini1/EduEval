@@ -61,11 +61,11 @@ def main():
     # Get desired filename (only allows unique filenames)
     filename = input("File name for the output: ")
     overwrite = 'n'
-    while os.path.exists(f"./{filename}.parquet.gzip") and overwrite == 'n':
+    while os.path.exists(f"./data/{filename}.parquet.gzip") and overwrite == 'n':
         overwrite = input("Do you want to overwrite that file? (y/n): ")
         if overwrite == 'y':
             break
-        filename = input("File name for the CSV output: ")
+        filename = input("File name for the output: ")
 
     # Complete all query searches
     try:
