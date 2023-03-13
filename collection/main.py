@@ -78,8 +78,11 @@ def main():
     dataset = filter_empty_comments(dataset)
     dataset = filter_by_length(dataset)
 
+    # Nest columns so ratings are searchable
+    dataset = dataset.groupby(["school", "professor", "course"], group_keys=True).apply(lambda x: x)
+
     # Save
-    dataset.to_parquet(f"./data/{filename}.parquet.gzip")
+    dataset.to_parquet(f"./data/{filename}.parquet.gzip", compression="gzip")
 
 
 if __name__ == "__main__":
