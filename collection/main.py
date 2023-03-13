@@ -6,8 +6,8 @@ import warnings
 import ratemyprofessor
 from googletrans import Translator
 from ratemyprofessor import School, Professor
-from collection.utils.query import load_queries, Query
-from collection.utils.process import filter_empty_comments, filter_by_length
+from utils.query import load_queries, Query
+from utils.process import filter_empty_comments, filter_by_length
 import pandas as pd
 import os
 
