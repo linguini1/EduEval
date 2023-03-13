@@ -5,10 +5,16 @@ __author__ = "Matteo Golin"
 from pandas import DataFrame
 import functools
 from typing import Callable
+from textblob import TextBlob
 
 # Constants
 MINIMUM_CHARS: int = 5
 
+def analyze_sentiment(data: DataFrame):
+    """Groups ratings on a per-sentence basis into piles of positive or negative data."""
+
+    for school in data["school"].unique():
+        print(data["professor"])
 
 # Filter functions
 def compose(*functions) -> Callable:
