@@ -7,12 +7,12 @@ import ratemyprofessor
 from googletrans import Translator
 from ratemyprofessor import School, Professor
 from collection.utils.query import load_queries, Query
+from collection.utils.process import filter_empty_comments, filter_by_length
 import pandas as pd
 import os
 
 # Constants
 QUERY_FILE: str = "./queries.json"
-EXPORT_FILE: str = "./ratings.csv"
 COLUMNS: list[str] = ["school", "professor", "course", "comment"]
 
 
@@ -74,8 +74,12 @@ def main():
         # If there is an error, save the current progress
         pass
 
-    # Write the DataFrame to a CSV file
-    dataset.to_csv(f"./{filename}.csv", index=False, encoding='utf-8')
+    # Filter bad data
+    dataset = filter_empty_comments(dataset)
+    dataset = filter_by_length(dataset)
+
+    # Save
+    dataset.to_parquet(f"./data/{filename}.parquet.gzip")
 
 
 if __name__ == "__main__":
