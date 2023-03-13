@@ -6,7 +6,7 @@ import warnings
 import ratemyprofessor
 from googletrans import Translator
 from ratemyprofessor import School, Professor
-from query import load_queries, Query
+from collection.utils.query import load_queries, Query
 import pandas as pd
 import os
 
@@ -14,7 +14,6 @@ import os
 QUERY_FILE: str = "./queries.json"
 EXPORT_FILE: str = "./ratings.csv"
 COLUMNS: list[str] = ["school", "professor", "course", "comment"]
-MINIMUM_CHARS: int = 5
 
 
 def scrape_queries(queries: list[Query], df: pd.DataFrame, translator: Translator, log: bool = True) -> None:
@@ -74,10 +73,6 @@ def main():
     except (KeyboardInterrupt, ValueError):
         # If there is an error, save the current progress
         pass
-
-    # Remove bad data
-    dataset = dataset[dataset["comment"].str.len() > MINIMUM_CHARS]  # Can't have too few characters
-    dataset = dataset[dataset["comment"].str.startswith("No Comments") == False]  # Removes empty comments
 
     # Write the DataFrame to a CSV file
     dataset.to_csv(f"./{filename}.csv", index=False, encoding='utf-8')
