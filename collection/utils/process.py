@@ -19,8 +19,10 @@ def sentences(comment: str) -> list[str]:
     return re.split(SENTENCE_SIGNIFIER, comment)[:-1]
 
 
-def analyze_sentiment(data: DataFrame):
-    """Groups ratings on a per-sentence basis into piles of positive or negative data."""
+def analyze_sentiment(data: DataFrame) -> DataFrame:
+    """
+    Returns DataFrame with ratings split into individual sentences and assigned a sentiment score between -1 and 1.
+    """
 
     data["comment"] = data["comment"].apply(sentences)  # Split comments into a list of sentences
     data = data.explode("comment")  # Give each sentence its own row
@@ -30,7 +32,7 @@ def analyze_sentiment(data: DataFrame):
     data["sentiment"] = data["comment"].apply(lambda x: TextBlob(str(x)).sentiment.polarity)
     data.astype({"sentiment": "float64"})  # Make sentiment column a float
 
-    print(data.dtypes)
+    return data
 
 
 # Filter functions
