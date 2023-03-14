@@ -12,16 +12,16 @@ from textblob import TextBlob
 # Constants
 MINIMUM_CHARS: int = 5
 SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
-SENTIMENTS: dict[str, int] = {
-    "negative": -1,
-    "neutral": 0,
-    "positive": 1,
+SENTIMENTS: dict[int, str] = {
+    -1: "negative",
+    0: "neutral",
+    1: "positive",
 }
 
 
 def sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
-    return re.split(SENTENCE_SIGNIFIER, comment)[:-1]
+    return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
 
 
 def sentiment(text: str) -> int:
@@ -33,7 +33,7 @@ def sentiment(text: str) -> int:
     """
 
     polarity = TextBlob(text).sentiment.polarity
-    return min(SENTIMENTS.values(), key=lambda x: abs(x - polarity))
+    return min(SENTIMENTS.keys(), key=lambda x: abs(x - polarity))
 
 
 def analyze_sentiment(data: DataFrame) -> DataFrame:
@@ -44,12 +44,13 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
     data["comment"] = data["comment"].apply(sentences)  # Split comments into a list of sentences
     data = data.explode("comment")  # Give each sentence its own row
     data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
+    data = data[data["comment"].str.startswith("<NA>") == False]  # Filter out artifacts from the split
 
     # Add column for sentiment
     data["sentiment"] = data["comment"].apply(
         lambda x: sentiment(str(x))  # 'Rounds' sentiment to a certain positive, negative or neutral value
     )
-    data.astype({"sentiment": "float64"})  # Make sentiment column a float
+    data.astype({"sentiment": int})  # Make sentiment column integers
 
     return data
 
