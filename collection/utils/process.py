@@ -2,10 +2,11 @@
 __author__ = "Matteo Golin"
 
 # Imports
-from pandas import DataFrame
-import functools
-from typing import Callable
+import pandas as pd
+from pandas import DataFrame, Series
 import re
+import functools
+from typing import Callable, Iterable
 from textblob import TextBlob
 
 # Constants
@@ -13,26 +14,24 @@ MINIMUM_CHARS: int = 5
 SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
 
 
-def sentences(comments: list[str]) -> list[str]:
+def sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
-    phrases = []
-    for comment in comments:
-        phrases.extend(re.split(SENTENCE_SIGNIFIER, comment)[:-1])
-    return phrases
+    return re.split(SENTENCE_SIGNIFIER, comment)[:-1]
 
 
 def analyze_sentiment(data: DataFrame):
     """Groups ratings on a per-sentence basis into piles of positive or negative data."""
 
-    comments = data.groupby(
-        ["school", "professor", "course"],
-        group_keys=True
-    ).apply(lambda x: list(x["comment"]))
+    data["comment"] = data["comment"].apply(sentences)  # Split comments into a list of sentences
+    data = data.explode("comment")  # Give each sentence its own row
+    data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
 
-    for school, professor, course in comments.index.values:
-        course_comments = comments[school][professor][course]
-        course_sentences = sentences(course_comments)
-        break
+    # Add column for sentiment
+    data["sentiment"] = data["comment"].apply(lambda x: TextBlob(str(x)).sentiment.polarity)
+    data.astype({"sentiment": "float64"})  # Make sentiment column a float
+
+    print(data.dtypes)
+
 
 # Filter functions
 def compose(*functions) -> Callable:

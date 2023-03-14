@@ -51,6 +51,7 @@ def main():
 
     # Set up dataset
     dataset = pd.DataFrame(columns=COLUMNS)
+    dataset.astype(str)
 
     # Creates translator instance
     translator = Translator()
@@ -77,6 +78,7 @@ def main():
     # Filter bad data
     dataset = filter_empty_comments(dataset)
     dataset = filter_by_length(dataset)
+    dataset.dropna(inplace=True)
 
     # Save
     dataset.to_parquet(f"./data/{filename}.parquet.gzip")
