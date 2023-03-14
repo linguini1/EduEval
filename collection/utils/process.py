@@ -5,16 +5,34 @@ __author__ = "Matteo Golin"
 from pandas import DataFrame
 import functools
 from typing import Callable
+import re
 from textblob import TextBlob
 
 # Constants
 MINIMUM_CHARS: int = 5
+SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
+
+
+def sentences(comments: list[str]) -> list[str]:
+    """Returns all the individual sentences in the list of comments."""
+    phrases = []
+    for comment in comments:
+        phrases.extend(re.split(SENTENCE_SIGNIFIER, comment)[:-1])
+    return phrases
+
 
 def analyze_sentiment(data: DataFrame):
     """Groups ratings on a per-sentence basis into piles of positive or negative data."""
 
-    for school in data["school"].unique():
-        print(data["professor"])
+    comments = data.groupby(
+        ["school", "professor", "course"],
+        group_keys=True
+    ).apply(lambda x: list(x["comment"]))
+
+    for school, professor, course in comments.index.values:
+        course_comments = comments[school][professor][course]
+        course_sentences = sentences(course_comments)
+        break
 
 # Filter functions
 def compose(*functions) -> Callable:
