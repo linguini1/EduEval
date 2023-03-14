@@ -7,7 +7,7 @@ import ratemyprofessor
 from googletrans import Translator
 from ratemyprofessor import School, Professor
 from utils.query import load_queries, Query
-from utils.process import filter_empty_comments, filter_by_length
+from utils.process import filter_empty_comments, filter_by_length, filter_not_english
 import pandas as pd
 import os
 
@@ -35,12 +35,7 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, translator: Translato
 
                 # Add each rating to the DataFrame
                 for rating in professor.get_ratings(course_name=course.name):
-
-                    comment = rating.comment
-                    if translator.detect(comment).lang != 'en':  # Checks if the language is not English
-                        comment = translator.translate(comment)  # Translates the rating to English
-
-                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, comment]
+                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, rating.comment]
 
 
 # Main
@@ -78,6 +73,7 @@ def main():
     # Filter bad data
     dataset = filter_empty_comments(dataset)
     dataset = filter_by_length(dataset)
+    dataset = filter_not_english(dataset)  # Translate comments
     dataset.dropna(inplace=True)
 
     # Save

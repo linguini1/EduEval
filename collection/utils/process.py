@@ -3,11 +3,12 @@ __author__ = "Matteo Golin"
 
 # Imports
 import pandas as pd
-from pandas import DataFrame, Series
+from pandas import DataFrame
 import re
 import functools
-from typing import Callable, Iterable
+from typing import Callable
 from textblob import TextBlob
+from googletrans import Translator
 
 # Constants
 MINIMUM_CHARS: int = 5
@@ -68,4 +69,21 @@ def filter_by_length(data: DataFrame, minimum_chars: int = MINIMUM_CHARS) -> Dat
 def filter_empty_comments(data: DataFrame) -> DataFrame:
     """Returns the DataFrame with no empty comments."""
     return data[data["comment"].str.startswith("No Comments") == False]  # Removes empty comments
+
+
+def filter_not_english(data: DataFrame) -> DataFrame:
+    """Translates any non-english comments in the DataFrame."""
+
+    translator = Translator()  # Create translator instance
+
+    def translate_comment(comment: str) -> str:
+        """Returns the translated comment if it is not English, otherwise returns the original."""
+
+        if translator.detect(comment) == "en":
+            return comment
+
+        return translator.translate(comment)
+
+    data["comment"] = data["comment"].apply(translate_comment)
+    return data
 
