@@ -20,12 +20,12 @@ SENTIMENTS: dict[int, str] = {
 }
 
 
-def sentences(comment: str) -> list[str]:
+def _sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
     return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
 
 
-def sentiment(text: str) -> int:
+def _sentiment(text: str) -> int:
     """
     Returns an integer to represent the sentiment polarity of the text.
     1: positive
@@ -49,14 +49,14 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
     Returns DataFrame with ratings split into individual sentences and assigned a sentiment score between -1 and 1.
     """
 
-    data["comment"] = data["comment"].apply(sentences)  # Split comments into a list of sentences
+    data["comment"] = data["comment"].apply(_sentences)  # Split comments into a list of sentences
     data = data.explode("comment")  # Give each sentence its own row
     data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
     data = data[data["comment"].str.startswith("<NA>") == False]  # Filter out artifacts from the split
 
     # Add column for sentiment
     data["sentiment"] = data["comment"].apply(
-        lambda x: sentiment(str(x))  # 'Rounds' sentiment to a certain positive, negative or neutral value
+        lambda x: _sentiment(str(x))  # 'Rounds' sentiment to a certain positive, negative or neutral value
     )
     data.astype({"sentiment": int})  # Make sentiment column integers
 
