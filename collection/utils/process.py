@@ -12,11 +12,28 @@ from textblob import TextBlob
 # Constants
 MINIMUM_CHARS: int = 5
 SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
+SENTIMENTS: dict[str, int] = {
+    "negative": -1,
+    "neutral": 0,
+    "positive": 1,
+}
 
 
 def sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
     return re.split(SENTENCE_SIGNIFIER, comment)[:-1]
+
+
+def sentiment(text: str) -> int:
+    """
+    Returns an integer to represent the sentiment polarity of the text.
+    1: positive
+    0: neutral
+    -1: negative
+    """
+
+    polarity = TextBlob(text).sentiment.polarity
+    return min(SENTIMENTS.values(), key=lambda x: abs(x - polarity))
 
 
 def analyze_sentiment(data: DataFrame) -> DataFrame:
@@ -29,7 +46,9 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
     data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
 
     # Add column for sentiment
-    data["sentiment"] = data["comment"].apply(lambda x: TextBlob(str(x)).sentiment.polarity)
+    data["sentiment"] = data["comment"].apply(
+        lambda x: sentiment(str(x))  # 'Rounds' sentiment to a certain positive, negative or neutral value
+    )
     data.astype({"sentiment": "float64"})  # Make sentiment column a float
 
     return data
