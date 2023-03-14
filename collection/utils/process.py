@@ -34,7 +34,14 @@ def sentiment(text: str) -> int:
     """
 
     polarity = TextBlob(text).sentiment.polarity
-    return min(SENTIMENTS.keys(), key=lambda x: abs(x - polarity))
+
+    if polarity < 0:  # Negative
+        return -1
+
+    if polarity > 0:  # Positive
+        return 1
+
+    return 0  # Neutral only if initial result was true neutral
 
 
 def analyze_sentiment(data: DataFrame) -> DataFrame:
