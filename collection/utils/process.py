@@ -38,13 +38,13 @@ def _sentiment(text: str, nearest: bool = False) -> int:
     if nearest:
         return min(SENTIMENTS.keys(), key=lambda x: abs(x - polarity))
 
-    if polarity < 0:  # Negative
+    if polarity <= -0.3:  # Negative
         return -1
 
-    if polarity > 0:  # Positive
+    if polarity >= 0.3:  # Positive
         return 1
 
-    return 0  # Neutral only if initial result was true neutral
+    return 0  # Neutral only if initial result was between -0.3 and 0.3
 
 
 def analyze_sentiment(data: DataFrame, nearest: bool = False) -> DataFrame:
