@@ -1,10 +1,15 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Feedback from './components/Feedback'
 
 
 function App() {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+    <Feedback />
+    </div>
+    
   );
 }
 
