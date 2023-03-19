@@ -11,6 +11,12 @@ from textblob import TextBlob
 from googletrans import Translator
 
 # Constants
+COLUMNS: dict[str, str | type] = {
+    "school": "category",
+    "professor": "category",
+    "course": "category",
+    "comment": pd.StringDtype(),
+}
 MINIMUM_CHARS: int = 5
 SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
 SENTIMENTS: dict[int, str] = {
@@ -63,6 +69,13 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
     return data
 
 
+def define_types(data: DataFrame) -> None:
+    """Gives columns of the DataFrame the correct types."""
+
+    for column, dtype in COLUMNS.items():
+        data[column] = data[column].astype(dtype)
+
+
 # Filter functions
 def compose(*functions) -> Callable:
     return functools.reduce(lambda f, g: lambda x: g(f(x)), functions)
@@ -89,7 +102,7 @@ def filter_not_english(data: DataFrame) -> DataFrame:
         if translator.detect(comment) == "en":
             return comment
 
-        return translator.translate(comment)
+        return translator.translate(comment).text
 
     data["comment"] = data["comment"].apply(translate_comment)
     return data

@@ -6,13 +6,12 @@ import warnings
 import ratemyprofessor
 from ratemyprofessor import School, Professor
 from utils.query import load_queries, Query
-from utils.process import filter_empty_comments, filter_by_length, filter_not_english
+from utils.process import filter_empty_comments, filter_by_length, filter_not_english, COLUMNS, define_types
 import pandas as pd
 import os
 
 # Constants
 QUERY_FILE: str = "./queries.json"
-COLUMNS: list[str] = ["school", "professor", "course", "comment"]
 
 
 def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
@@ -44,8 +43,8 @@ def main():
     queries = load_queries(QUERY_FILE)
 
     # Set up dataset
-    dataset = pd.DataFrame(columns=COLUMNS)
-    dataset.astype(str)
+    dataset = pd.DataFrame(columns=list(COLUMNS.keys()))
+    define_types(dataset)
 
     # Ignore BS4 warnings
     warnings.filterwarnings("ignore")
@@ -64,6 +63,7 @@ def main():
         scrape_queries(queries, dataset, log=True)  # Show progress in console
     except (KeyboardInterrupt, ValueError):
         # If there is an error, save the current progress
+        print("Saving progress...")
         pass
 
     # Filter bad data
