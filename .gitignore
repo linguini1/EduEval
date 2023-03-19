@@ -4,3 +4,6 @@
 
 # Pycharm artifacts
 .idea
+
+# Cached stuff
+*.cpython-311.pyc

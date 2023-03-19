@@ -77,7 +77,7 @@ def main():
     dataset.dropna(inplace=True)
 
     # Save
-    dataset.to_parquet(f"./data/{filename}.parquet.gzip")
+    dataset.to_parquet(f"./data/{filename}.parquet.gzip", compression="gzip")
 
 
 if __name__ == "__main__":
