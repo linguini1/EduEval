@@ -25,7 +25,7 @@ def _sentences(comment: str) -> list[str]:
     return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
 
 
-def _sentiment(text: str, nearest: bool = False) -> int:
+def _sentiment(text: str) -> int:
     """
     Returns an integer to represent the sentiment polarity of the text.
     1: positive
@@ -35,19 +35,16 @@ def _sentiment(text: str, nearest: bool = False) -> int:
 
     polarity = TextBlob(text).sentiment.polarity
 
-    if nearest:
-        return min(SENTIMENTS.keys(), key=lambda x: abs(x - polarity))
-
-    if polarity <= -0.3:  # Negative
+    if polarity <= -0.2:  # Negative
         return -1
 
-    if polarity >= 0.3:  # Positive
+    if polarity >= 0.2:  # Positive
         return 1
 
     return 0  # Neutral only if initial result was between -0.3 and 0.3
 
 
-def analyze_sentiment(data: DataFrame, nearest: bool = False) -> DataFrame:
+def analyze_sentiment(data: DataFrame) -> DataFrame:
     """
     Returns DataFrame with ratings split into individual sentences and assigned a sentiment score between -1 and 1.
     """
@@ -59,7 +56,7 @@ def analyze_sentiment(data: DataFrame, nearest: bool = False) -> DataFrame:
 
     # Add column for sentiment
     data["sentiment"] = data["comment"].apply(
-        lambda x: _sentiment(str(x), nearest=nearest)  # 'Rounds' sentiment to a definite +ve, -ve or neutral value
+        lambda x: _sentiment(str(x))  # 'Rounds' sentiment to a definite +ve, -ve or neutral value
     )
     data.astype({"sentiment": int})  # Make sentiment column integers
 

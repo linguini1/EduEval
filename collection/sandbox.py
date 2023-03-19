@@ -6,13 +6,13 @@ import pandas as pd
 import utils.process as proc
 
 # Constants
-POLARITY = 1
+POLARITY = -1
 
 # Read data
 data = pd.read_parquet("./data/ratings.parquet.gzip")
 
 # Analyze sentiment
-nearest_data = proc.analyze_sentiment(data.copy(), nearest=True)
+nearest_data = proc.analyze_sentiment(data.copy())
 true_neutral_data = proc.analyze_sentiment(data.copy())
 
 # Counts of sentimentality types
