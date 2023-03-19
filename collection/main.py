@@ -4,7 +4,6 @@ __author__ = "Matteo Golin"
 # Imports
 import warnings
 import ratemyprofessor
-from googletrans import Translator
 from ratemyprofessor import School, Professor
 from utils.query import load_queries, Query
 from utils.process import filter_empty_comments, filter_by_length, filter_not_english
@@ -16,7 +15,7 @@ QUERY_FILE: str = "./queries.json"
 COLUMNS: list[str] = ["school", "professor", "course", "comment"]
 
 
-def scrape_queries(queries: list[Query], df: pd.DataFrame, translator: Translator, log: bool = True) -> None:
+def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
     """Adds the results of scraping the queries to a Pandas DataFrame."""
 
     for query in queries:
@@ -48,9 +47,6 @@ def main():
     dataset = pd.DataFrame(columns=COLUMNS)
     dataset.astype(str)
 
-    # Creates translator instance
-    translator = Translator()
-
     # Ignore BS4 warnings
     warnings.filterwarnings("ignore")
 
@@ -65,7 +61,7 @@ def main():
 
     # Complete all query searches
     try:
-        scrape_queries(queries, dataset, translator, log=True)  # Show progress in console
+        scrape_queries(queries, dataset, log=True)  # Show progress in console
     except (KeyboardInterrupt, ValueError):
         # If there is an error, save the current progress
         pass

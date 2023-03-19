@@ -8,7 +8,6 @@ review during each semester's performance reviews. This model was originally hyp
 - Hamnah Qureshi
 - Grant Achuzia
 - Jad Mohieldin
-- Hetarthi Soni
 
 ## Requirements
 - Python 3.11+
