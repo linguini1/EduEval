@@ -44,7 +44,6 @@ def main():
 
     # Set up dataset
     dataset = pd.DataFrame(columns=list(COLUMNS.keys()))
-    define_types(dataset)
 
     # Ignore BS4 warnings
     warnings.filterwarnings("ignore")
@@ -71,6 +70,7 @@ def main():
     dataset = filter_by_length(dataset)
     dataset = filter_not_english(dataset)  # Translate comments
     dataset.dropna(inplace=True)
+    define_types(dataset)  # Specific datatypes
 
     # Save
     dataset.to_parquet(f"./data/{filename}.parquet.gzip", compression="gzip")
