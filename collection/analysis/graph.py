@@ -12,8 +12,8 @@ fig, axis = plt.subplots(1,2)  #Subplot of two graphs
 
 
 #Creates an histogram with values provided
-def histogram (data, xLabel, yLabel, xMax, yMax, title, yAxis) ->None:
-    axis[yAxis].hist(data, bins = range(min(data), max(data)+ 8, 8), color='red', edgecolor='black', alpha=0.5, rwidth=0.8)
+def histogram (data, binWidth, xLabel, yLabel, xMax, yMax, title, yAxis) ->None:
+    axis[yAxis].hist(data, bins = range(min(data), max(data)+ binWidth, binWidth), color='red', edgecolor='black', alpha=0.5, rwidth=0.8)
     axis[yAxis].axis([0,xMax,1,yMax])
     axis[yAxis].set_xlabel("Number of "+ xLabel)
     axis[yAxis].set_ylabel("Number of " + yLabel)

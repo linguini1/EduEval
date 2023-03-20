@@ -8,12 +8,12 @@ import os
 from graph import histogram, plot
 
 #retusn the avaerge given x and y vals and creates histogram plot
-def avg_histogram(data, xVal, yVal, xMax, yMax, title, yAxis) -> float:
+def avg_histogram(data, xVal, yVal, xMax, yMax, title, yAxis, binWidth) -> float:
     group_data = data.groupby(yVal)[xVal].nunique()
     freq = (group_data).values
     numOfY = data[yVal].nunique()
     numOfX = data[xVal].nunique()
-    histogram(freq, xVal, yVal, xMax, yMax, title, yAxis)
+    histogram(freq, binWidth, xVal, yVal, xMax, yMax, title, yAxis)
     return round(numOfX/numOfY,2)
 
 #returns the average number of sentences per rating
@@ -41,8 +41,8 @@ def main():
 
     data = pd.read_parquet("collection/data/ratings.parquet.gzip")
     stats = ""
-    stats += "Avg courses/professor: " + str(avg_histogram(data,"course", "professor", 60, 18, "Number of coureses taught by professor", 0)) +"\n"
-    stats += "Avg ratings/professor: " + str(avg_histogram(data, "comment", "professor", 225, 10, "Number of ratings for the professor", 1)) + "\n"
+    stats += "Avg courses/professor: " + str(avg_histogram(data,"course", "professor", 60, 18, "Number of coureses taught by professor", 0, 8)) +"\n"
+    stats += "Avg ratings/professor: " + str(avg_histogram(data, "comment", "professor", 400, 18, "Number of ratings for the professor", 1, 75)) + "\n"
     stats += "Avg sentences/rating: " + str(avg_sentence_comment(data)) + "\n"
     stats += "Avg words/ratings: " + str(avg_word_comment(data)) + "\n"
     stats += "Number of professors in universities: "
@@ -50,9 +50,6 @@ def main():
     stats += numProfessors
     plot(stats)
 
-
-    
-    
 
 
 if __name__ == "__main__":
