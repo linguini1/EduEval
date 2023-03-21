@@ -4,19 +4,17 @@ __author__ = "Matteo Golin"
 # Imports
 import warnings
 import ratemyprofessor
-from googletrans import Translator
 from ratemyprofessor import School, Professor
 from utils.query import load_queries, Query
-from utils.process import filter_empty_comments, filter_by_length
+from utils.process import filter_empty_comments, filter_by_length, filter_not_english, COLUMNS, define_types
 import pandas as pd
 import os
 
 # Constants
 QUERY_FILE: str = "./queries.json"
-COLUMNS: list[str] = ["school", "professor", "course", "comment"]
 
 
-def scrape_queries(queries: list[Query], df: pd.DataFrame, translator: Translator, log: bool = True) -> None:
+def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
     """Adds the results of scraping the queries to a Pandas DataFrame."""
 
     for query in queries:
@@ -35,12 +33,7 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, translator: Translato
 
                 # Add each rating to the DataFrame
                 for rating in professor.get_ratings(course_name=course.name):
-
-                    comment = rating.comment
-                    if translator.detect(comment).lang != 'en':  # Checks if the language is not English
-                        comment = translator.translate(comment)  # Translates the rating to English
-
-                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, comment]
+                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, rating.comment, rating.date]
 
 
 # Main
@@ -50,10 +43,7 @@ def main():
     queries = load_queries(QUERY_FILE)
 
     # Set up dataset
-    dataset = pd.DataFrame(columns=COLUMNS)
-
-    # Creates translator instance
-    translator = Translator()
+    dataset = pd.DataFrame(columns=list(COLUMNS.keys()))
 
     # Ignore BS4 warnings
     warnings.filterwarnings("ignore")
@@ -69,14 +59,18 @@ def main():
 
     # Complete all query searches
     try:
-        scrape_queries(queries, dataset, translator, log=True)  # Show progress in console
+        scrape_queries(queries, dataset, log=True)  # Show progress in console
     except (KeyboardInterrupt, ValueError):
         # If there is an error, save the current progress
+        print("Saving progress...")
         pass
 
     # Filter bad data
     dataset = filter_empty_comments(dataset)
     dataset = filter_by_length(dataset)
+    dataset = filter_not_english(dataset)  # Translate comments
+    dataset.dropna(inplace=True)
+    define_types(dataset)  # Specific datatypes
 
     # Save
     dataset.to_parquet(f"./data/{filename}.parquet.gzip", compression="gzip")
