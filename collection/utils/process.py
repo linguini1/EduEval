@@ -9,6 +9,7 @@ import functools
 from typing import Callable
 from textblob import TextBlob
 from googletrans import Translator
+from datetime import date
 
 # Constants
 COLUMNS: dict[str, str | type] = {
@@ -16,6 +17,7 @@ COLUMNS: dict[str, str | type] = {
     "professor": "category",
     "course": "category",
     "comment": pd.StringDtype(),
+    "date": "datetime64[ns]"
 }
 MINIMUM_CHARS: int = 5
 SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"

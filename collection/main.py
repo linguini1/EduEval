@@ -33,7 +33,7 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> 
 
                 # Add each rating to the DataFrame
                 for rating in professor.get_ratings(course_name=course.name):
-                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, rating.comment]
+                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, rating.comment, rating.date]
 
 
 # Main
