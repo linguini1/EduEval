@@ -7,9 +7,9 @@
   }
   
   /* Navbar styles */
-   nav {
+   .nav-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #0c0b0b;
     height: 60px;
@@ -20,5 +20,6 @@
     margin-right: 60px;
     height: 50px;
     width: auto;
+
   }
   
