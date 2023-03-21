@@ -24,16 +24,11 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> 
         for professor_name in query.professors:
             professor: Professor = ratemyprofessor.get_professor_by_school_and_name(school, professor_name)
 
-            # Get all the ratings for each course
-            for course in professor.courses:
+            print(f"{query.school}: {professor_name}")
 
-                # Print for each course to show progress
-                if log:
-                    print(f"{query.school}: {professor_name} - {course.name}")
-
-                # Add each rating to the DataFrame
-                for rating in professor.get_ratings(course_name=course.name):
-                    df.loc[df.shape[0]] = [school.name, professor.name, course.name, rating.comment, rating.date]
+            # Add each rating to the DataFrame
+            for rating in professor.get_ratings():
+                df.loc[df.shape[0]] = [school.name, professor.name, rating.class_name, rating.comment, rating.date]
 
 
 # Main
