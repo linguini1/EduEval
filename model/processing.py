@@ -3,22 +3,29 @@ __author__ = "Matteo Golin"
 
 # Imports
 from pandas import DataFrame
+from collection.utils.process import SENTIMENTS
 
 # Constants
 
 
 # Helper functions
-def separate_comments(course_comments: DataFrame) -> tuple[str, str, str]:
+def separate_comments(course_comments: DataFrame) -> dict[str, str]:
     """
-    Returns three strings of comments, separated by sentimentality. Strings are returned in the order of positive,
-    neutral and negative.
+    Returns a dictionary containing the sentiment name as a key, and the string of comments associated with the
+    sentiment as a value.
+    {
+        "negative": "Some long string of negative comments.",
+        ...
+    }
 
     :param course_comments A DataFrame containing the comments for a specific course and each comment's associated
     sentimentality score:
     """
 
-    positive = course_comments[course_comments["sentimentality"] == 1]["comment"]
-    neutral = course_comments[course_comments["sentimentality"] == 0]["comment"]
-    negative = course_comments[course_comments["sentimentality"] == -1]["comment"]
+    # Collect categories
+    categories = {}
+    for sentiment in SENTIMENTS:
+        categories[SENTIMENTS[sentiment]] = course_comments[course_comments["sentimentality"] == sentiment]["comment"]
+        categories[SENTIMENTS[sentiment]] = ". ".join(categories[SENTIMENTS[sentiment]])
 
-    return " ".join(positive), " ".join(neutral), " ".join(negative)
+    return categories

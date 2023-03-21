@@ -14,10 +14,12 @@ def main():
     # Read in dataset
     data = pd.read_parquet("ratings.parquet.gzip")
 
+    # Store courses for convenience of cleaner
+    with open("courses.txt", 'w') as file:
+        file.writelines([f"{course}\n" for course in data["course"].unique()])
+
     # Remove courses that don't make sense
     # Merge courses together if they are equivalent
-    for course in data["course"].unique():
-        print(course)
 
     return  # Early return until all cleaning code is in place
 
