@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro',sans-serif;
+    
   }
   
   /* Navbar styles */
-  nav {
+   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,20 +22,3 @@
     width: auto;
   }
   
-  .navbar-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-  .navbar-items a {
-    margin-right: 60px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .navbar-items a:hover {
-    color: grey;
-  }
