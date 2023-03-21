@@ -3,7 +3,7 @@ import "./Feedback.css";
 
 const courses = ["Course A", "Course B", "Course C", "Course D", "Course E"];
 
-const Feedback = () => {
+export default function Feedback() {
   return (
     <div className="container">
       <label htmlFor="course-select">Course Name:</label>
@@ -24,4 +24,3 @@ const Feedback = () => {
   );
 };
 
-export default Feedback;
