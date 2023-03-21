@@ -1,0 +1,17 @@
+.nav-items{
+    color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .navbar-items a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar-items a:hover {
+    color: grey;
+  }
