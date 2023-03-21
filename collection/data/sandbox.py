@@ -25,7 +25,7 @@ def main():
     data = analyze_sentiment(data)
 
     # Save the cleaned data
-    data.to_parquet("cleaned.parquet.gzip", compression="gzip")
+    data.to_parquet("test_data.parquet.gzip", compression="gzip")
 
 
 if __name__ == '__main__':
