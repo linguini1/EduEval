@@ -2,20 +2,15 @@ import React from 'react';
 import logo from '../media/logo2.png';
 import './Navbar.css';
 
-function Navbar() {
+export default function Navbar({ children }) {
   return (
-    <div >
-      <nav>       
-        <div className="navbar-items">
-          <div className="logo">
-            <a href="/"><img src={logo} /></a>
-          </div>
-          <a href="/feedback">Insert Feedback</a>
-          <a  href="/results">Get Results</a>
+    <nav>
+      <div className="nav-items">
+        <div className="logo">
+          <img src={logo} alt="Logo" />
         </div>
-      </nav>
-    </div>
+        <div >{children}</div>
+      </div>
+    </nav>
   );
 }
-
-export default Navbar;
