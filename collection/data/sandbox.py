@@ -14,11 +14,6 @@ def main():
     # Read in dataset
     data = pd.read_parquet("pre_filtered_data.parquet.gzip")
 
-    # Initial filtering
-    data.drop_duplicates(inplace=True)
-    data.to_parquet("pre_filtered_data.parquet.gzip", compression="gzip")
-    return
-
     # Set display
     pd.set_option("display.max_colwidth", 150)
 
