@@ -12,7 +12,7 @@ MINIMUM_COMMENTS: int = 7
 def main():
 
     # Read in dataset
-    data = pd.read_parquet("pre_filtered_data.parquet.gzip")
+    data = pd.read_parquet("data/pre_filtered_data.parquet.gzip")
 
     # Set display
     pd.set_option("display.max_colwidth", 150)
