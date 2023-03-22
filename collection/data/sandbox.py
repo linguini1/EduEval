@@ -12,14 +12,14 @@ MINIMUM_COMMENTS: int = 7
 def main():
 
     # Read in dataset
-    data = pd.read_parquet("ratings.parquet.gzip")
+    data = pd.read_parquet("rawdata.parquet.gzip")
 
     # Initial filtering
     data.dropna(inplace=True)
     data = filter_empty_comments(data)
     data = filter_by_length(data)
     data = filter_not_english(data)
-    data.to_parquet("ratings.parquet.gzip", compression="gzip")
+    data.to_parquet("rawdata.parquet.gzip", compression="gzip")
 
     # Set display
     pd.set_option("display.max_colwidth", 150)

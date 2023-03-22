@@ -17,13 +17,15 @@ QUERY_FILE: str = "./queries.json"
 def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
     """Adds the results of scraping the queries to a Pandas DataFrame."""
 
+    previously_completed_profs = set(df["professor"].values)
+
     for query in queries:
         school: School = ratemyprofessor.get_school_by_name(query.school)  # Get the school from RateMyProf
 
         # Get all the professors from RateMyProf
         for professor_name in query.professors:
 
-            if professor_name in df["professor"].values:
+            if professor_name in previously_completed_profs:
                 print(f"{professor_name} already scraped, continuing...")
                 continue
 
@@ -48,7 +50,7 @@ def main():
     filename = input("File name for the output: ")
     overwrite = 'n'
     while os.path.exists(f"./data/{filename}.parquet.gzip") and overwrite == 'n':
-        overwrite = input("Do you want to overwrite that file? (y/n): ")
+        overwrite = input("Do you want to append to that file? (y/n): ")
         if overwrite == 'y':
             break
         filename = input("File name for the output: ")
@@ -62,8 +64,9 @@ def main():
     # Complete all query searches
     try:
         scrape_queries(queries, dataset, log=True)  # Show progress in console
-    except (KeyboardInterrupt, AttributeError):
+    except (KeyboardInterrupt, AttributeError) as error:
         # If there is an error, save the current progress
+        print(error.message)
         print("Saving progress...")
 
     define_types(dataset)  # Specific datatypes
