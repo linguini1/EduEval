@@ -22,8 +22,12 @@ def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> 
 
         # Get all the professors from RateMyProf
         for professor_name in query.professors:
-            professor: Professor = ratemyprofessor.get_professor_by_school_and_name(school, professor_name)
 
+            if professor_name in df["professor"].values:
+                print(f"{professor_name} already scraped, continuing...")
+                continue
+
+            professor: Professor = ratemyprofessor.get_professor_by_school_and_name(school, professor_name)
             print(f"{query.school}: {professor_name}")
 
             # Add each rating to the DataFrame
@@ -37,9 +41,6 @@ def main():
     # Load queries
     queries = load_queries(QUERY_FILE)
 
-    # Set up dataset
-    dataset = pd.DataFrame(columns=list(COLUMNS.keys()))
-
     # Ignore BS4 warnings
     warnings.filterwarnings("ignore")
 
@@ -52,19 +53,19 @@ def main():
             break
         filename = input("File name for the output: ")
 
+    # Set up dataset
+    if os.path.exists(f"data/{filename}.parquet.gzip"):
+        dataset = pd.read_parquet(f"data/{filename}.parquet.gzip")  # Start from last point
+    else:
+        dataset = pd.DataFrame(columns=list(COLUMNS.keys()))
+
     # Complete all query searches
     try:
         scrape_queries(queries, dataset, log=True)  # Show progress in console
-    except (KeyboardInterrupt, ValueError):
+    except (KeyboardInterrupt, AttributeError):
         # If there is an error, save the current progress
         print("Saving progress...")
-        pass
 
-    # Filter bad data
-    dataset = filter_empty_comments(dataset)
-    dataset = filter_by_length(dataset)
-    dataset = filter_not_english(dataset)  # Translate comments
-    dataset.dropna(inplace=True)
     define_types(dataset)  # Specific datatypes
 
     # Save

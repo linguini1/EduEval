@@ -9,7 +9,6 @@ import functools
 from typing import Callable
 from textblob import TextBlob
 from googletrans import Translator
-from datetime import date
 
 # Constants
 COLUMNS: dict[str, str | type] = {

@@ -3,7 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 import pandas as pd
-from collection.utils.process import analyze_sentiment
+from collection.utils.process import analyze_sentiment, filter_by_length, filter_not_english, filter_empty_comments
 
 # Constants
 MINIMUM_COMMENTS: int = 7
@@ -13,6 +13,13 @@ def main():
 
     # Read in dataset
     data = pd.read_parquet("ratings.parquet.gzip")
+
+    # Initial filtering
+    data.dropna(inplace=True)
+    data = filter_empty_comments(data)
+    data = filter_by_length(data)
+    data = filter_not_english(data)
+    data.to_parquet("ratings.parquet.gzip", compression="gzip")
 
     # Set display
     pd.set_option("display.max_colwidth", 150)
