@@ -3,6 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 import pandas as pd
+import langdetect
 from pandas import DataFrame
 import re
 import functools
@@ -96,13 +97,13 @@ def filter_not_english(data: DataFrame) -> DataFrame:
     """Translates any non-english comments in the DataFrame."""
 
     translator = Translator()  # Create translator instance
+    langdetect.DetectorFactory.seed = 0
 
     def translate_comment(comment: str) -> str:
         """Returns the translated comment if it is not English, otherwise returns the original."""
 
-        if translator.detect(comment) == "en":
+        if langdetect.detect(comment) == "en":
             return comment
-
         return translator.translate(comment).text
 
     data["comment"] = data["comment"].apply(translate_comment)

@@ -18,8 +18,10 @@ def main():
     data.dropna(inplace=True)
     data = filter_empty_comments(data)
     data = filter_by_length(data)
+    print("Translating....")
     data = filter_not_english(data)
-    data.to_parquet("rawdata.parquet.gzip", compression="gzip")
+    data.to_parquet("pre_filtered_data.parquet.gzip", compression="gzip")
+    return
 
     # Set display
     pd.set_option("display.max_colwidth", 150)
