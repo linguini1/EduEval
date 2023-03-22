@@ -23,7 +23,7 @@ def histogram (data, binWidth, xLabel, yLabel, xMax, yMax, title, yAxis) ->None:
 
 #Plots the graph and shows a text analysis of the data
 def plot(text):
-    plt.figtext(0.8,0.45, text, wrap = True, ha= "center",fontsize=8, bbox= {"facecolor": "green", "alpha": 0.5, "pad":3})
+    plt.figtext(0.8,0.55, text, wrap = True, ha= "center",fontsize=8, bbox= {"facecolor": "green", "alpha": 0.5, "pad":3})
     plt.savefig("collection/analysis/graphs/data analysis.png")
     plt.subplots_adjust(bottom=0.75)
     plt.close()

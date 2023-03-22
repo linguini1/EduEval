@@ -45,6 +45,7 @@ def main():
     stats += "Avg ratings/professor: " + str(avg_histogram(data, "comment", "professor", 400, 18, "Number of ratings for the professor", 1, 75)) + "\n"
     stats += "Avg sentences/rating: " + str(avg_sentence_comment(data)) + "\n"
     stats += "Avg words/ratings: " + str(avg_word_comment(data)) + "\n"
+    stats += "Number of courses: " + str(data['course'].nunique()) + "\n"
     stats += "Number of professors in universities: "
     numProfessors = (str(data.groupby('school')["professor"].nunique()).replace("school", '')).replace('Name: professor, dtype: int64', '')
     stats += numProfessors
