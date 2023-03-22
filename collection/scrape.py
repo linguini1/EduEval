@@ -11,7 +11,7 @@ import pandas as pd
 import os
 
 # Constants
-QUERY_FILE: str = "./queries.json"
+QUERY_FILE: str = "./collection/queries.json"
 
 
 def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:

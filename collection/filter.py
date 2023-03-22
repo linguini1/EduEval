@@ -3,7 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 import pandas as pd
-import collection.utils.process as filters
+import utils.process as filters
 
 # Constants
 FILENAME: str = "pre_filtered_data"
@@ -13,7 +13,7 @@ FILENAME: str = "pre_filtered_data"
 def main():
 
     # Read raw data
-    data = pd.read_parquet("data/rawdata.parquet.gzip")
+    data = pd.read_parquet("collection/data/rawdata.parquet.gzip")
 
     # Perform filter
     data.dropna(inplace=True)
@@ -23,7 +23,10 @@ def main():
     data = filters.filter_not_english(data)
 
     # Save data
-    data.to_parquet(f"data/{FILENAME}.parquet.gzip", compression="gzip")
+    data.to_parquet(f"collection/data/{FILENAME}.parquet.gzip", compression="gzip")
+
+    print(pd.read_parquet(f"collection/data/{FILENAME}.parquet.gzip", engine='pyarrow'))
+
 
 
 if __name__ == "__main__":
