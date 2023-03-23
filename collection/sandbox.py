@@ -6,7 +6,7 @@ import pandas as pd
 from utils.process import analyze_sentiment
 
 # Constants
-MINIMUM_COMMENTS: int = 10
+MINIMUM_COMMENTS: int = 7
 
 
 # Main
@@ -19,12 +19,16 @@ def main():
 
     # Remove duplicates
     data["comment"] = data["comment"].drop_duplicates()
-    data = data.drop_duplicates(subset=['professor', 'course'], keep='first')
+    data.drop_duplicates(subset=["comment"], inplace=True)
 
     # Any courses with not enough reviews are dropped
+    counts = data["course"].value_counts()
     for course in data["course"].unique():
-        if len(data[data["course"] == course]) < MINIMUM_COMMENTS:
-            data = data[data["course"] != course]
+        if counts[course] < MINIMUM_COMMENTS:
+            data = data[data["course"].str.contains(course) == False]
+
+    print(data["course"].value_counts())
+    print(f"Dataset contains {len(data['course'].unique())} courses after cleaning.")
 
     # Do sentiment analysis
     data = analyze_sentiment(data)
