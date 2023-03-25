@@ -3,10 +3,14 @@ __author__ = "Matteo Golin"
 
 # Imports
 from pandas import DataFrame
-from collection.utils.process import SENTIMENTS
+#from collection.utils.process import SENTIMENTS
 
 # Constants
-
+SENTIMENTS: dict[int, str] = {
+    -1: "negative",
+    0: "neutral",
+    1: "positive",
+}
 
 # Helper functions
 def separate_comments(course_comments: DataFrame) -> dict[str, str]:
@@ -25,7 +29,7 @@ def separate_comments(course_comments: DataFrame) -> dict[str, str]:
     # Collect categories
     categories = {}
     for sentiment in SENTIMENTS:
-        categories[SENTIMENTS[sentiment]] = course_comments[course_comments["sentimentality"] == sentiment]["comment"]
+        categories[SENTIMENTS[sentiment]] = course_comments[course_comments["sentiment"] == sentiment]["comment"]
         categories[SENTIMENTS[sentiment]] = ". ".join(categories[SENTIMENTS[sentiment]])
 
     return categories
