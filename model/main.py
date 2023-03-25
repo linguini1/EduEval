@@ -17,15 +17,20 @@ def main():
 
 
     with open('results.txt', 'w') as f:
-        for course in data["course"].unique():
-            f.write(course + ": \n")
-            subset = data[['comment', 'sentiment']]
-            df = subset[data['course'] == course]
-            dict = separate_comments(df)
-            pos_result = model(dict.get("positive"), ratio=0.5)
-            f.write("Postive Feedback: \n"+ pos_result +"\n")
-            neg_result = model(dict.get("negative"), ratio = 0.5)
-            f.write("Negative Feedback: \n"+ neg_result +"\n\n")
+        for professor in data['professor'].unique():
+            f.write("Professor: "  + professor + "\n")
+            dr = set(data.loc[data["professor"] == professor, 'course'])
+            for course in dr:
+                f.write(course + ": \n")
+                subset = data[['comment', 'sentiment']]
+                df = subset[(data['course'] == course) & (data["professor"] == professor)]
+                dict = separate_comments(df)
+                pos_result = model(dict.get("positive"), ratio=0.5)
+                f.write("Postive Feedback: \n"+ pos_result +"\n")
+                neg_result = model(dict.get("negative"), ratio = 0.5)
+                f.write("Negative Feedback: \n"+ neg_result +"\n")
+                neutral_result = model(dict.get("neutral"), ratio=0.5)
+                f.write("Neutral Feedback: \n" + neutral_result + "\n\n")
 
 
 
