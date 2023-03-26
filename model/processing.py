@@ -1,16 +1,10 @@
-# Pre and post-processing for the model
+# Pre- and post-processing for the model
 __author__ = "Matteo Golin"
 
 # Imports
 from pandas import DataFrame
-#from collection.utils.process import SENTIMENTS
+from collection.utils.process import SENTIMENTS
 
-# Constants
-SENTIMENTS: dict[int, str] = {
-    -1: "negative",
-    0: "neutral",
-    1: "positive",
-}
 
 # Helper functions
 def separate_comments(course_comments: DataFrame) -> dict[str, str]:

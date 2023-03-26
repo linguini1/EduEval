@@ -6,7 +6,7 @@ import warnings
 import ratemyprofessor
 from ratemyprofessor import School, Professor
 from utils.query import load_queries, Query
-from utils.process import filter_empty_comments, filter_by_length, filter_not_english, COLUMNS, define_types
+from utils.process import COLUMNS, define_types
 import pandas as pd
 import os
 
@@ -14,7 +14,7 @@ import os
 QUERY_FILE: str = "./collection/queries.json"
 
 
-def scrape_queries(queries: list[Query], df: pd.DataFrame, log: bool = True) -> None:
+def scrape_queries(queries: list[Query], df: pd.DataFrame) -> None:
     """Adds the results of scraping the queries to a Pandas DataFrame."""
 
     previously_completed_profs = set(df["professor"].values)
@@ -49,7 +49,7 @@ def main():
     # Get desired filename (only allows unique filenames)
     filename = input("File name for the output: ")
     overwrite = 'n'
-    while os.path.exists(f"./data/{filename}.parquet.gzip") and overwrite == 'n':
+    while os.path.exists(f"data/{filename}.parquet.gzip") and overwrite == 'n':
         overwrite = input("Do you want to append to that file? (y/n): ")
         if overwrite == 'y':
             break
@@ -63,7 +63,7 @@ def main():
 
     # Complete all query searches
     try:
-        scrape_queries(queries, dataset, log=True)  # Show progress in console
+        scrape_queries(queries, dataset)  # Show progress in console
     except (KeyboardInterrupt, AttributeError) as error:
         # If there is an error, save the current progress
         print(error.message)
@@ -72,7 +72,7 @@ def main():
     define_types(dataset)  # Specific datatypes
 
     # Save
-    dataset.to_parquet(f"./data/{filename}.parquet.gzip", compression="gzip")
+    dataset.to_parquet(f"data/{filename}.parquet.gzip", compression="gzip")
 
 
 if __name__ == "__main__":

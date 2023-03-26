@@ -5,44 +5,55 @@ __author__ = "Matteo Golin"
 import pandas as pd
 from summarizer import Summarizer
 from processing import separate_comments
+import warnings
 
 # Constants
+NUM_SENTENCES: int = 4
 
 
 # Main
 def main():
 
-    data = pd.read_parquet("collection/data/analyzed_data.parquet.gzip")
-    model = Summarizer()
+    # Suppress annoying warnings
+    warnings.filterwarnings("ignore")
 
+    data = pd.read_parquet("../collection/data/analyzed_data.parquet.gzip")  # Read data
+    model = Summarizer()  # Create BERT extractive summarizer model
 
-    with open('results.txt', 'w') as f:
-        for professor in data['professor'].unique():
-            f.write("Professor: "  + professor + "\n")
-            dr = set(data.loc[data["professor"] == professor, 'course'])
-            for course in dr:
-                f.write(course + ": \n")
-                subset = data[['comment', 'sentiment']]
-                df = subset[(data['course'] == course) & (data["professor"] == professor)]
-                dict = separate_comments(df)
-                pos_result = model(dict.get("positive"), ratio=0.5)
-                f.write("Postive Feedback: \n"+ pos_result +"\n")
-                neg_result = model(dict.get("negative"), ratio = 0.5)
-                f.write("Negative Feedback: \n"+ neg_result +"\n")
-                neutral_result = model(dict.get("neutral"), ratio=0.5)
-                f.write("Neutral Feedback: \n" + neutral_result + "\n\n")
+    # Group data in a way that makes searching through combinations more convenient
+    grouped_data = data.groupby(["school", "professor", "course"], group_keys=True)
+    combinations = list(grouped_data.groups.keys())  # Unique combos of school, prof and course
+    grouped_data = grouped_data.apply(lambda x: x)  # Make DataFrame searchable
 
+    with open("../collection/data/summaries.txt", 'w') as file:
 
+        # Iterate through all unique combinations
+        for school, professor, course in combinations:
 
-    # comments = data[data["course"].str.contains("SYSC2320") == True]["comment"]
-    # text_mass = ". ".join(comments)
+            file.write(f"{school}: {professor}, {course}\n")
+            print(f"{school}: {professor}, {course}")
 
-    # model = Summarizer()
-    # result = model(text_mass, num_sentences=4)
-    # bullets = result.split(". ")
+            # Join the comments with their predicted sentiment
+            comments = pd.concat(
+                [grouped_data["comment"][school][professor][course],
+                 grouped_data["sentiment"][school][professor][course]],
+                axis=1
+            )
 
-    # for bullet in bullets:
-    #     print(f"* {bullet}")
+            # Get sentiment based results
+            sentimented_ratings = separate_comments(comments)
+
+            # Make predictions
+            for sentiment, ratings in sentimented_ratings.items():
+                summary = model(ratings, num_sentences=NUM_SENTENCES)
+                # Write to file
+                file.write(f"{sentiment.title()} Summary:\n")
+                print(f"{sentiment.title()} Summary:")
+                for s in summary.split(". "):
+                    file.write(f"* {s.strip()}\n")
+                    print(f"* {s}")
+                file.write("\n")
+                print()
 
 
 if __name__ == '__main__':

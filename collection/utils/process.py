@@ -59,6 +59,7 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
 
     data["comment"] = data["comment"].apply(_sentences)  # Split comments into a list of sentences
     data = data.explode("comment")  # Give each sentence its own row
+    data.reset_index(inplace=True)  # Re-index
     data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
     data = data[data["comment"].str.startswith("<NA>") == False]  # Filter out artifacts from the split
 
