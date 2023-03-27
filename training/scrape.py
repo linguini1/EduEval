@@ -49,15 +49,15 @@ def main():
     # Get desired filename (only allows unique filenames)
     filename = input("File name for the output: ")
     overwrite = 'n'
-    while os.path.exists(f"data/{filename}.parquet.gzip") and overwrite == 'n':
+    while os.path.exists(f"../data/{filename}.parquet.gzip") and overwrite == 'n':
         overwrite = input("Do you want to append to that file? (y/n): ")
         if overwrite == 'y':
             break
         filename = input("File name for the output: ")
 
     # Set up dataset
-    if os.path.exists(f"data/{filename}.parquet.gzip"):
-        dataset = pd.read_parquet(f"data/{filename}.parquet.gzip")  # Start from last point
+    if os.path.exists(f"../data/{filename}.parquet.gzip"):
+        dataset = pd.read_parquet(f"../data/{filename}.parquet.gzip")  # Start from last point
     else:
         dataset = pd.DataFrame(columns=list(COLUMNS.keys()))
 

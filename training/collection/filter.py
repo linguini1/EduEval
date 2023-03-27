@@ -12,7 +12,7 @@ FILENAME: str = "pre_filtered_data"
 # Main
 def main():
     # Read raw data
-    data = pd.read_parquet("data/rawdata.parquet.gzip")
+    data = pd.read_parquet("../data/rawdata.parquet.gzip")
 
     # Perform filter
     data.dropna(inplace=True)
@@ -24,7 +24,7 @@ def main():
     # Save data
     data.to_parquet(f"data/{FILENAME}.parquet.gzip", compression="gzip")
 
-    print(pd.read_parquet(f"data/{FILENAME}.parquet.gzip", engine='pyarrow'))
+    print(pd.read_parquet(f"../data/{FILENAME}.parquet.gzip", engine='pyarrow'))
 
 
 if __name__ == "__main__":

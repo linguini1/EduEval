@@ -4,11 +4,34 @@ __author__ = "Matteo Golin"
 # Imports
 import pandas as pd
 from summarizer import Summarizer
-from processing import separate_comments
+from collection.utils.process import SENTIMENTS
 import warnings
 
 # Constants
 NUM_SENTENCES: int = 4
+
+
+# Helper functions
+def separate_comments(course_comments: pd.DataFrame) -> dict[str, str]:
+    """
+    Returns a dictionary containing the sentiment name as a key, and the string of comments associated with the
+    sentiment as a value.
+    {
+        "negative": "Some long string of negative comments.",
+        ...
+    }
+
+    :param course_comments A DataFrame containing the comments for a specific course and each comment's associated
+    sentimentality score:
+    """
+
+    # Collect categories
+    categories = {}
+    for sentiment in SENTIMENTS:
+        categories[SENTIMENTS[sentiment]] = course_comments[course_comments["sentiment"] == sentiment]["comment"]
+        categories[SENTIMENTS[sentiment]] = ". ".join(categories[SENTIMENTS[sentiment]])
+
+    return categories
 
 
 # Main
@@ -17,7 +40,7 @@ def main():
     # Suppress annoying warnings
     warnings.filterwarnings("ignore")
 
-    data = pd.read_parquet("../collection/data/analyzed_data.parquet.gzip")  # Read data
+    data = pd.read_parquet("data/analyzed_data.parquet.gzip")  # Read data
     model = Summarizer()  # Create BERT extractive summarizer model
 
     # Group data in a way that makes searching through combinations more convenient
@@ -25,7 +48,7 @@ def main():
     combinations = list(grouped_data.groups.keys())  # Unique combos of school, prof and course
     grouped_data = grouped_data.apply(lambda x: x)  # Make DataFrame searchable
 
-    with open("../collection/data/summaries.txt", 'w') as file:
+    with open("data/summaries.txt", 'w') as file:
 
         # Iterate through all unique combinations
         for school, professor, course in combinations:
