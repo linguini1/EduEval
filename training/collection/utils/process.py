@@ -23,7 +23,6 @@ MINIMUM_CHARS: int = 5
 SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
 SENTIMENTS: dict[int, str] = {
     -1: "negative",
-    0: "neutral",
     1: "positive",
 }
 
@@ -36,20 +35,14 @@ def _sentences(comment: str) -> list[str]:
 def _sentiment(text: str) -> int:
     """
     Returns an integer to represent the sentiment polarity of the text.
-    1: positive
-    0: neutral
-    -1: negative
     """
 
     polarity = TextBlob(text).sentiment.polarity
 
-    if polarity <= -0.2:  # Negative
-        return -1
-
-    if polarity >= 0.2:  # Positive
+    if polarity >= 0:  # Positive
         return 1
-
-    return 0  # Neutral only if initial result was between -0.3 and 0.3
+    else:
+        return -1
 
 
 def analyze_sentiment(data: DataFrame) -> DataFrame:

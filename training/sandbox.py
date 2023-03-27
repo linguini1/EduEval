@@ -3,7 +3,7 @@ __author__ = "Matteo Golin"
 
 # Imports
 import pandas as pd
-from utils.process import analyze_sentiment
+from collection.utils.process import analyze_sentiment
 
 # Constants
 MINIMUM_COMMENTS: int = 7
