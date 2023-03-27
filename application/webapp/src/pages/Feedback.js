@@ -15,6 +15,7 @@ export default function Feedback() {
         ))}
       </select>
 
+      <label htmlFor="upload-file" className="upload-file">Upload Review File:</label> 
       <div className="button-container">
         <button className="submitButton" type="submit">
           Submit
