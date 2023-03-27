@@ -11,11 +11,27 @@ label {
   margin-bottom: 8px;
   font-size: 24px;
   color: #666;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+.upload-file{
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #666;
+  position: absolute;
+  top: 30%;
+  left: 35%;
 }
 
 input[type="text"],
 input[type="email"],
+
 select {
+  position: absolute;
+  top: 8%;
+  left: 49%;
+  margin-top: 2px;
   margin-bottom: 16px;
   padding: 12px;
   border: none;
@@ -23,9 +39,6 @@ select {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 26px;
   color: #333;
-}
-
-select {
   appearance: none;
   background-color: #f6f6f6;
   padding-right: 30px;
