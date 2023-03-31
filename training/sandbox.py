@@ -12,7 +12,7 @@ MINIMUM_COMMENTS: int = 7
 # Main
 def main():
     # Read in dataset
-    data = pd.read_parquet("data/pre_filtered_data.parquet.gzip")
+    data = pd.read_parquet("training/data/pre_filtered_data.parquet.gzip")
 
     # Set display
     pd.set_option("display.max_colwidth", 150)
@@ -34,7 +34,7 @@ def main():
     data = analyze_sentiment(data)
 
     # Save the cleaned data
-    data.to_parquet("data/analyzed_data.parquet.gzip", compression="gzip")
+    data.to_parquet("training/data/analyzed_data.parquet.gzip", compression="gzip")
 
 
 if __name__ == '__main__':

@@ -5,7 +5,9 @@ __author__ = "Matteo Golin"
 import pandas as pd
 from summarizer import Summarizer
 from collection.utils.process import SENTIMENTS
+from nltk.tokenize import sent_tokenize
 import warnings
+import re
 
 # Constants
 NUM_SENTENCES: int = 4
@@ -40,7 +42,7 @@ def main():
     # Suppress annoying warnings
     warnings.filterwarnings("ignore")
 
-    data = pd.read_parquet("data/analyzed_data.parquet.gzip")  # Read data
+    data = pd.read_parquet("training/data/analyzed_data.parquet.gzip")  # Read data
     model = Summarizer()  # Create BERT extractive summarizer model
 
     # Group data in a way that makes searching through combinations more convenient
@@ -48,7 +50,7 @@ def main():
     combinations = list(grouped_data.groups.keys())  # Unique combos of school, prof and course
     grouped_data = grouped_data.apply(lambda x: x)  # Make DataFrame searchable
 
-    with open("data/summaries.txt", 'w') as file:
+    with open("training/data/summaries.txt", 'w') as file:
 
         # Iterate through all unique combinations
         for school, professor, course in combinations:
@@ -69,9 +71,17 @@ def main():
             # Make predictions
             for sentiment, ratings in sentimented_ratings.items():
                 summary = model(ratings, num_sentences=NUM_SENTENCES)
+                #summary = model(ratings, max_length=300, min_length=150)
                 # Write to file
                 file.write(f"{sentiment.title()} Summary:\n")
                 print(f"{sentiment.title()} Summary:")
+                print(summary)
+
+                # for s in sent_tokenize(summary):
+                #     s = re.sub(r'\.{2,}', '.', s)
+                #     file.write(f"* {s}\n")
+                #     print(f"* {s}")
+
                 for s in summary.split(". "):
                     file.write(f"* {s.strip()}\n")
                     print(f"* {s}")

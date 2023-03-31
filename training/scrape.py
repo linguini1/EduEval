@@ -5,8 +5,8 @@ __author__ = "Matteo Golin"
 import warnings
 import ratemyprofessor
 from ratemyprofessor import School, Professor
-from utils.query import load_queries, Query
-from utils.process import COLUMNS, define_types
+from collection.utils.query import load_queries, Query
+from collection.utils.process import COLUMNS, define_types
 import pandas as pd
 import os
 

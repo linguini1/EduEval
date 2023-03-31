@@ -10,6 +10,8 @@ import functools
 from typing import Callable
 from textblob import TextBlob
 from googletrans import Translator
+from nltk.tokenize import sent_tokenize
+
 
 # Constants
 COLUMNS: dict[str, str | type] = {
@@ -29,7 +31,9 @@ SENTIMENTS: dict[int, str] = {
 
 def _sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
-    return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
+    sentences = sent_tokenize(comment)
+    return sentences
+    #return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
 
 
 def _sentiment(text: str) -> int:
