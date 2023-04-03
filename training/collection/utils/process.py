@@ -5,7 +5,6 @@ __author__ = "Matteo Golin"
 import pandas as pd
 import langdetect
 from pandas import DataFrame
-import re
 import functools
 from typing import Callable
 from textblob import TextBlob
@@ -22,7 +21,6 @@ COLUMNS: dict[str, str | type] = {
     "date": "datetime64[ns]"
 }
 MINIMUM_CHARS: int = 5
-SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
 SENTIMENTS: dict[int, str] = {
     -1: "negative",
     1: "positive",
@@ -33,7 +31,6 @@ def _sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
     sentences = sent_tokenize(comment)
     return sentences
-    #return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
 
 
 def _sentiment(text: str) -> int:

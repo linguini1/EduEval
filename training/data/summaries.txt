@@ -1,13 +1,15 @@
 Carleton University: Ariel Fuenzalida, SOCI3055
 Negative Summary:
+* If you don't try and keep up you will obviously do bad.
 * Assigns an insane amount of reading that is never tested on or discussed in class.
-* Tells you exactly what you need to have read for the exams, making the rest of your reading completely useless(which is annoying after you've read it all)
+* Tells you exactly what you need to have read for the exams, making the rest of your reading completely useless(which is annoying after you've read it all).
+* I found his lectures very boring and impossible to follow, couldn't listen for more than an hour.
 
 Positive Summary:
 * You will get a good mark if you put in the work.
-* This class was definitely not boring and was easy on marks as 30% is simply for participating in weekly discussion.
 * The content of the course is interesting and he is overall a very nice and helpful professor.
-* Final paper is a joke 12-14 pages... Amazing professor, studies in addictions was my favourite class and he was the one of the best prof's I had.
+* He truly wants his students to learn and grow.
+* He knows what he is talking about, but the the amount of readings in this course are ridiculous, and I am quite familiar with heavy-reading courses.
 
 Carleton University: Cristina Ruiz Martin, SYSC2004
 Negative Summary:
@@ -16,25 +18,26 @@ Negative Summary:
 Positive Summary:
 * I took the course as an online offering in 2021.
 * She uploaded short 20 min lectures that had nothing to do with the assignments and the lab.
-* The assignments were pretty much an open-ended project
+* The assignments were pretty much an open-ended project.
 
 Carleton University: Cristina Ruiz Martin, SYSC2006
 Negative Summary:
-* Learning C is no easy task, the weight of the midterm and final are quite heavy, yet Dr. Cristina is quite decent (despite the bad reviews).
-* She has a bit of an accent, but it takes little time to get used to
+* Cristina is quite decent (despite the bad reviews).
+* She has a bit of an accent, but it takes little time to get used to.
+* The material can be confusing, but the practice exams they give out are really helpful.
 
 Positive Summary:
 * Dr. Ruiz Martin gets a bad rap for being associated with 1041/1042, but she is a lot better in person and is actually nice.
-* Learning C isn't easy for most, and she does make the effort to ensure people mostly understand the concepts.
-* Martin tries to make the best of it by teaching well.
-* She will try her best to understand your question and help you visualize the problem
+* Learning C is no easy task, the weight of the midterm and final are quite heavy, yet Dr. Martin tries to make the best of it by teaching well.
+* Most of the poor reviews are from salty first years.
+* She will try her best to understand your question and help you visualize the problem.
 
 Carleton University: Lynn Marshall, ECOR1606
 Negative Summary:
 * I didn't find the course hard, but the final exam is not a good reflection of the quizzes, labs or material.
-* Assigments are hard a bit .Final exam was extremly hard .
-* She is not that bad with teaching but she is very very very tough with marking and creating questions for tests and finals.
-* She is rude and makes you not want to ask her anything ever again.
+* Very tough I used to fall asleep every single lecture.
+* ECOR 1606 is a easy but boring course that is slow for 5/6 of the course then picks up at the end.
+* She makes the assignments very hard, but the written and the lab  midterms were fair.
 
 Positive Summary:
 * She genuinely wants her students to do well.
@@ -44,29 +47,29 @@ Positive Summary:
 
 Carleton University: Lynn Marshall, SYSC2002
 Negative Summary:
+* There is only one worst prof than her in the systems department, and that is John Bryant!
 * she is rude, and show no-patience when u asking question .
-* Only in her office during office hours, a total of two hours that never fit my schedule.
-* I was just reading the other comments about her, and I'm not alone.
-* The most useless, boring and atrociously mean person
+* I asked her about an assignment I had a small problem with, she told she can't help me, and to debug it!
+* The most useless, boring and atrociously mean person.
 
 Positive Summary:
 * She is too fast and she is strict in marking.
-* Even in her office, when I found the free time, she was never any help.
-* I then went to Bryant and he fixed my program.
-* She is ok teacher but maybe not a nice person
+* Some of the stuff at the end (like Linked List and everything it led up to), I found helpful for the classes, although if they are still selling the course notes, than I'd suggest buying those and reading them on your own time which beat attending lectures.
+* Not the greatest prof, but could be worse.
+* Had her for summer session of ECOR 1606 and I didn't like her much because I felt she taught for those who already had a programming background.
 
 Carleton University: Lynn Marshall, SYSC2004
 Negative Summary:
 * This Professor does an awful job teaching online.
-* Her lectures are very confusing considering that they are all pre-recorded videos from pervious years.
 * I've had her as a prof for 4 diff courses, & my experience keeps getting worse and worse.
-* A final exam with 85 questions, where 20 of them are long answer and 65 mcq
+* A final exam with 85 questions, where 20 of them are long answer and 65 mcq.
+* In general, she is a really bad instructor.
 
 Positive Summary:
 * There are SO many opportunities for bonus marks it's not even funny.
 * Her brightspace page is also organized really well with plenty examples and videos of her walking through solutions.
-* Great lectures, fair exams, always available for questions.
 * Uses online references mostly instead of her own explanation for the course material.
+* She was a fairly easy prof, and unlike ppl below I found her pretty helpful when I went to her office hours (once!)
 
 Carleton University: Lynn Marshall, SYSC2006
 Negative Summary:
@@ -74,607 +77,15 @@ Negative Summary:
 
 Positive Summary:
 * Professor Marshall uses pre-recorded lectures, which may sound discouraging, but everything that is on the tests, assignments, exams, and labs are found there.
+* She very clearly explains everything you need to know at a pace that makes it easy to learn, and is easily accessible outside of class if you need help If I were you, I'd avoid taking classes with Lynn Marshall.
 * Her lectures are extremely well organized and she goes through many examples to further understanding.
-* I found the midterm and final to be moderately difficult, but overall fair.
-* She wants people to keep on failing and not passing her course
+* She provides plenty of material, practice and homework on her culearn (I don' think any other prof puts as much effort as her into her culearn).
 
 Carleton University: Lynn Marshall, SYSC3303
 Negative Summary:
-* That said DO NOT take 3303 with her in the summer, she expect you to do 12 weeks of spread out work in 6 weeks and still marks hard (no clear marking scheme).
 * That said, she has some pretty annoying teaching problems: she marks by removing marks whenever you do something wrong, which is a problem because she asks vague questions with specific answers in mind.
 * She also makes you memorize arbitrary things (e.g.
-* Not a nice lady...
-* Likes to give long and hard midterms and even harder finals
-
-Positive Summary:
-* She also writes marathon exams and midterms like go into the exam and try to do as much as possible correctly not finish cause u wont.
-* Gives great lectures and the notes are good.
-* She is pretty helpful when you ask her questions.
-* Extremely picky at marking - must have perfect syntax
-
-Carleton University: Mengchi Liu, COMP3005
-Negative Summary:
-* Extremely poorly worded assignments (cost me 10% of my final grade).
-* Reads slides like a text-to-speech editor, and is next to impossible to understand.
-* Words cannot express just how incompetent this man is at teaching.
-* Reads straight from slides, badly maintained website, hard to follow in class, poor assignment timing...
-* This guy is out right the worst prof i have had in my university career (6 years).
-
-Positive Summary:
-* I don't understand why many students are rating the professor low.
-* He seems like he'd be a really nice person in real life because he gives extensions whenever we ask for them...
-* This professor absolutely does not care about the class he is teaching at all.
-* Requires that TAs follow midterm definitions to a tee; if the student does not include specific words, they will lose marks.
-* There isn't much I can say that the others below me haven't, so basically, avoid Liu at all costs.
-
-Carleton University: Michael Runtz, 1902
-Negative Summary:
-* Very difficult to get ahold of the professor and TAs.
-* You have very little guidance and assistance with any material in the course.
-* Should not be online if the professor can not upload videos due to him being remote.
-* It was brutal, especially for a CuLearn course.
-
-Positive Summary:
-* This man is the Bob Ross of Ontarian natural history.
-* Everyone should take 1902 at some point (an easy 90 if you take good notes).
-* The lectures are uploaded to BS and they tend to not work and we constantly have to chase the professor to fix the issue.
-* He is lighthearted, but do not take this course unless you are prepared to respect it
-
-Carleton University: Paul Mkandawire, HUMR2202
-Negative Summary:
-* Can't put into words how horrible this class was taught.
-* I never say anything negative about profs but this guy was by far without a doubt the WORST professor I have ever had in my multiple years of school.
-* I've attended 3 different schools and have never come across a professor that was so disorganized, not understanding, rude, and just plain and simple awful.
-* This 2nd yr course is harder than all of my 4th yr courses.
-
-Positive Summary:
-* Attendance is required for the class and the tutorials.
-* The material is interesting but the instructor can't teach it.
-* I will not take another human rights couse again.
-* I have never had a prof so disrespectful to students needs.
-
-Carleton University: Ramy Gohary, SYSC2320
-Negative Summary:
-* If anyone says this professor is bad they are simply lying because they did not put the effort needed to pass the course.
-* He gives you tough dad vibes where he acts tough in class but he really cares a lot about his students.
-* The midterm and exams are hard, but he truly does want every student to pass.
-* I could see how passionate he was when he taught
-
-Positive Summary:
-* Amazing prof, shows true passion while teaching.
-* His lectures are really informative and have a great amount of depth.
-* Loved his homework and and quizzes on Fridays.
-* Prof Gohary really took his time to explain every single concept in the lectures, even the small details and was always available for questions outside of class.
-
-Carleton University: Ramy Gohary, SYSC3600
-Negative Summary:
-* Ramy is super-disorganized and his lecturers are a mess
-
-Positive Summary:
-* Explains everything about the course, you could probably understand it straight out of highschool.
-* which keeps you up to date throughout the semester.
-* He will take the time to clarify in the lecture or during office hours and makes sure you understand.
-* If you did the problem sets.. That said, his examples are useful and often straight from the book.
-
-Carleton University: Sam Dube, 69105
-Negative Summary:
-
-Positive Summary:
-* I guess I'm really dating myself with that 69 course code... Make that MATH 1005 for the youngsters out there.
-* Mingarelli taught him well :) I can't even tell who's better.
-* Dube is more student oriented, but Mingarelli....
-* This guy is absoultely amazing.
-
-Carleton University: Siva Sivathayalan, 91111
-Negative Summary:
-
-Positive Summary:
-* Very intolerant, extremely unclear, both in terms of spoken language and in terms of chalkboard skills.
-
-Carleton University: Siva Sivathayalan, CIVE4301
-Negative Summary:
-* One of the worst profs I've had at Carleton througout my Civil Engineering degree.
-* I started this course having heard Siva was difficult
-
-Positive Summary:
-* Glad that CIVE 4301 was my first and last course with this professor.
-* His lectures mostly focus on theory, with examples in the tutorials.
-* Good prof, makes connections to fundamental concepts.
-* Most people complain about 111 no matter who they have.
-
-Carleton University: Siva Sivathayalan, ECOR1606
-Negative Summary:
-
-Positive Summary:
-
-Carleton University: Tamara Kotar, HUMR2001
-Negative Summary:
-* 4 video quizzes and 3 other assignments and a final in class exam and she drops your lowest grade.
-* Her lectures are sometimes information heavy & she jumps back & forth between topics - definitely take notes on a computer for this reason.
-* She is not a really great prof.. she is not approachable and is not effective at conveying information
-
-Positive Summary:
-* Dr. Kotar is extremely professional and resourceful.
-* Professor Kotar is one of the best professors i've had at Carleton.
-* I love how creative she is (during lecture or the assignment styles).
-* Easy grader and very clear and concise with what she wants you to do and how you will be graded on it.
-
-University Of Toronto: Andrew Meyertholen, PHY132
-Negative Summary:
-
-Positive Summary:
-* Excellent teaching, he explains everything very clearly and answers everyone's questions.
-* Even if you think you do not like physics, take his course and you will change your mind.
-* He reviewed questions posted in every online quiz and went through some of them in class.
-* Absolutely the best prof I've ever had at U of T. His pre-class videos and super helpful, he's always willing to meet with students outside of class for further clarification on the material, and he explains concepts in an easy to understand way.
-
-University Of Toronto: James Hong, FINA4329
-Negative Summary:
-* What a privilege I had to sit down in his class and learn about the importance of life insurance and risk management.
-* I was afraid I would fall asleep during lecture but his lectures never failed to keep me awake and entertained
-
-Positive Summary:
-* He brought a lot of real world experience to the classroom and he made the lectures interesting.
-* He also invites guest speakers to share experience and Q&A sections.
-* Exams are straight forward from his slides.
-* The two exams are not hard, just show up and take notes.
-
-University Of Toronto: Katherine Daignault, STA257
-Negative Summary:
-* She is a ppt reader, totally waste of time to attend her lecture.
-* Her slides are copy and pasted from the textbook and she doesn't expand on concepts in lectures, making them useless.
-* Definitely the worst professor I've ever met in uoft.
-* Even though her slides are not too bad, there are countless typos and she cannot even fix her mistakes during the lecture.
-
-Positive Summary:
-* I understand every word in her question but I dont understand the question.
-* Her quizzes always appear with some ambiguous options.
-* Slide reader, lots of typos, cannot answer questions asked in class, unreasonable exams.
-* I learned more from my tutorial TA..
-* I cant say she is a teacher...
-* Many typos in the slides and she even cant do calculation correctly.
-
-University Of Toronto: Katherine Daignault, STA302
-Negative Summary:
-* Midterm exam was difficult, so prepare well.
-* Unpopular opinion but I think she is not even that bad.
-* I actually learned a lot about data analysis through her 3-part assignments and I didn't think they were that hard, you just have to read the marking scheme carefully.
-* I had to create an account on this website just to express how bad of a prof she is.
-
-Positive Summary:
-* Prof. Katherine was a fair instructor, organized, clear lectures & provided leniency with 2 no-questions asked extensions for students.
-* She is easily offended, and questions are taken as criticism taking up a defensive tone as though we're attacking her character.
-* Sooooooo many assignments and tests and projects.
-* This was during the covid-19 pandemic, and this was my only course to graduate school.
-
-University Of Toronto: Maria Papaconstantinou, HMB203
-Negative Summary:
-* All of her lectures were really repetitive and she didn't talk about any of the nuances of global health which is the entire point of the field.
-
-Positive Summary:
-* Dr. P's lectures were excellent, they really opened my eyes to what global health is and the challenges surrounding it.
-* I enjoyed the group work, and it was an overall awesome learning experience.
-* We also had a ridiculous group project where you all did your own part and just slapped it together.
-* Dr. P is a great prof and I love her teaching style.
-
-University Of Toronto: Maria Papaconstantinou, HMB204
-Negative Summary:
-* This is due to the fact that she rambles a lot which complicates content further.
-* The in-class question period runs on for too long
-
-Positive Summary:
-* In HMB204 you can truly tell the professor enjoys the content and teaching it.
-* She is clear-cut, helpful, and always willing to do more for her students and hear them out.
-* Her attitude during lecture is extremely palpable as she has no respect for the students, picking on minuscule things.
-* Dr. Dr. Maria is one of the best profs that I have had so far, and this course was one of my favourite courses.
-
-University Of Toronto: Maria Papaconstantinou, HMB265
-Negative Summary:
-* Terse professor when dealing with student questions and extremely harsh grader, even asking all TAs to be especially tough with the assignment grading.
-* Explanations are fairly clear and clarifications are given for confused students.
-* However, the 2nd part of the course is significantly harder than the 1st so don't be caught off guard.
-* Had her for other courses last year too - she's approachable, but often confusing in lectures.
-
-Positive Summary:
-* I know I myself and even some straight A friends have gotten our GPAs nuked by this course.
-* Although the course has a pretty heavy workload, I enjoyed her lectures, her test was fair, and her instructions are clear.
-* Her lectures are clear if you pay attention and just follow along.
-* Dr. P. is also extremely approachable and really cares about her students.
-
-University Of Toronto: Maria Papaconstantinou, HMB265H
-Negative Summary:
-* Students had to memorize random facts (not related to genetics) to pass the course, VERY disappointing.
-* She's one of the few profs that actually cares about her students.
-* She is passionate about genetic and knowledgeable about  the subject
-
-Positive Summary:
-* I first took the class in the fall and had to drop it because I wasn't doing well.
-* Does not teach HMB265 yet writes a very unreasonable exam for it.
-* Dr. P is one of the most caring and enthusiastic professors at UofT.
-* Her lectures were interesting, she focused on what was important, and made genetics for me one of my favourite courses.
-* Dr. P is an excellent prof who really cares about her students.
-
-University Of Toronto: Michael Khan, RSM100
-Negative Summary:
-* Course is doable (and aceable) if you attend lectures and write down all key case studies.
-* But his tests are very heavily based on memorization and not having knowledge on the course.
-* I went into the exam with a 4.0 and came out with a 3.0 which was insane considering the content isn't difficult.
-* It can get annoying but at least he isn't boring or anything.
-
-Positive Summary:
-* Make sure to read textbook as multiple choice is heavily tested on the textbook.
-* The lectures are engaging and the prof is nice.
-* He wants the exact specifics and wording covered in class and will test material that you would overlook just to catch you off-guard.
-* Professor Khan is a great lecturer and encourages class discussion.
-
-University Of Toronto: Michael Khan, RSM427
-Negative Summary:
-* One of the descriptions I gave him was 'hilarious' as in hilariously bad.
-* 15% of course mark is on participation with an unrealistic rubric so he will screw you over if you get on his bad side
-
-Positive Summary:
-* I don't understand what's the point of mandatory participation which takes 20% of the entire course.
-* If you put in a solid effort, you'll do well.
-* Talks a lot about himself which no one really cares about.
-* Very out-of-the-box most of the times, although lectures can be monotonous sometimes due to the dry course subject matter.
-
-University Of Toronto: Nicole Mideo, EEB325
-Negative Summary:
-* Midterm was definitely hard, but I knew that going in the course because I did so so in her BIO220 section.
-* This was the WORST course Ive taken in my 4 years at UofT.
-* Shes not clear about grading expectations for assignments, and dont even try voice your opinion without getting snarky comments back.
-* Low midterm averages, low assignment average, lots of readings that you get quizzed on weekly.
-* Dishonest - says won't test details then does.
-
-Positive Summary:
-* She is so passionate about what she researches and you can really see it in her lectures.
-* She's a very approachable, animated person and lecture material is interesting.
-* If you're looking to learn something and enjoy it at the same time then Nicole is perfect for you.
-* But don't expect to get a good mark out of it. "
-
-University Of Toronto: Sian Patterson, BCH210
-Negative Summary:
-* Absolutely terrible course... You need to take notes of EVERY little thing she mentions bc its testable.
-* Professor Patterson is literally the worst professor because of how inconsiderate she is.
-* Lecture slides were horrible and disorganized, the most important things that even showed up on the final were not on the slides, but only briefly mentioned.
-* The workload may be a bit heavier than other courses but I learned a lot from her class.
-
-Positive Summary:
-* She is incredibly unapproachable and uncaring.
-* For the students that gave her a good rating.
-* Dr. Patterson is one of the most caring professors I've had so far at U of T. I find that students rate professors based on how well they were able to handle a course, not how well a professor taught them.
-* Her content is hard but if you know the material, her test is easy.
-
-University of Ottawa: Diane Pacom, SOC
-Negative Summary:
-* Interesting...Some students left negative and sarcastic comments.
-* I cannot but wonder about acumen of those that write negatively.
-* Unlike other sociologie classes, this one forces you to analyze society.
-* She tells you what she thinks and then with the help of other theories explains it and adapts it to what's going on now.
-
-Positive Summary:
-* This is a "3M" award winning professor, the highest recognition available in Canada for professors/pedagogs.
-* She speaks several languages, is recognized by peers internationally, cares about students, etc.
-* She was the best teacher I've had in University so far.
-* She encourages you to go all the way in school and loves students.
-
-University of Ottawa: Diane Pacom, SOC2700
-Negative Summary:
-* Born in Africa, Greek, lived and taught in New York, has some weird friend.
-* One of the very few teachers who actually cares whether you learn or not.
-* gives you to read which are long articles).
-* Serious students who want some content, and who want to further their knowledge should avoid this teacher
-
-Positive Summary:
-* Congratulations Mrs. Madame Pacom is one of my best teachers.
-* Extremely good prof, explains very well, cares about her students, makes funny jokes, relates pass to present, gives plenty of examples to undertand, speaks many languages.
-* This professor is all about appearance and pleasing the students.
-* This lady makes you think.. Sure: she's fun, nice, etc.
-
-University of Ottawa: Gordon Lenjosek, ECO1102
-Negative Summary:
-* he's mean, it's like he prides himself in making life very difficult for students.
-* His lectures are very boring and unclear.
-* Lenjosek is not the nicest guy in the world nor tries to be.
-* However, his mid-terms and finals are extremely difficult(Like they will kill ur GPA).
-
-Positive Summary:
-* He doesn't help his students and doesn't convey material in a logical and simplified form.
-* His exams are verbatim what he teaches in his lectures and what you attain from reading the textbook.
-* Lectures are dry but useful if you want a good grade in the class.
-* He is very good at explaining concepts and his slides are well done but he is the hardest of 1st year micro and macro profs at OttawaU and it is very difficult to get an A or higher.
-
-University of Ottawa: Gordon Lenjosek, ECO1102B
-Negative Summary:
-* He was never available outside of class and whenever you would go to him or email him, he would give you a short aggressive answer.
-* He leave the lecture meeting immediately after the lecture is done and is not willing to assist his students even during his office hour.
-* I'm not saying they were just hard, of course i've learned stuff that was much harder than economics but he made it way harder and boring.
-* He gets confused often when teaching the class and doesn't seem to know his slides very well
-
-Positive Summary:
-* Wasn't helpful when I reached out for help.
-* Prof Lenjosek is very fair and his lectures are always helpful and clear.
-* I took both macro and micro from professor Lenjosek and fr they were the hardest thing I've ever learn.
-* The midterms are way more difficult than the practice midterms and quizzes.
-
-University of Ottawa: Iain McKenna, CDN1100
-Negative Summary:
-
-Positive Summary:
-* Although a lot of reading is required, but he will give you the questions before the exams to prepare, so it's pretty fair.
-* That being said, expect A LOT of work and reading in this course.
-* Last reviewer is clearly a top student who understands how to read a syllabus.
-* He is very clear and is quick to answer questions.
-
-University of Ottawa: Iain McKenna, PHI1103
-Negative Summary:
-* As long as you keep up with the material, you can't do bad in his class.
-* Although he talks way to much and the classes get boring, his use of virtual campus is very very helpful.
-
-Positive Summary:
-* You can tell he cares about his class, and he really wants them to learn and be interested.
-* I never read one of the articles and managed to ace the tests.
-* I will miss his class such a great prof for PHI because he doesn't make the material overwhelming or boring.
-* Enthusiastic and cares about teaching students.
-
-University of Ottawa: Iain McKenna, PHI2396
-Negative Summary:
-* McKenna is by far and away the worst prof I've had so far.
-* The midterm was extremely hard and did not care.
-* The grading is extremely harsh on papers and doesn't even make sense.
-* He didn't post the rubric for the final exam until 2 days before it was due, leaving many students confused and unsure of his expectations.
-
-Positive Summary:
-* Prof.
-* Fully ignored the bio component of bioethics, so if you looking to take a philosophy class he's your guy.
-* Almost never at his office hrs (held an O.H.
-* while he was out on a run) and would reply to emails a week later.
-* His midterm had so many questions on it that were not covered.
-* His class is not structured - it's just him going on long rants and tangents (2+ hours sometimes) that aren't at all useful to learning the course material.
-
-University of Ottawa: Iain McKenna, PHI2398
-Negative Summary:
-* People who complain about their marks are missing the point of courses like his
-
-Positive Summary:
-* Very easy midterms if you do reading - mc and short answers.
-* The discussions were great and the guy is mad smart.
-* Tests were chill, but there's A LOT of reading.
-* Here is a guy who actually cares about teaching.
-
-University of Ottawa: Keith McCuaig, MUS2304
-Negative Summary:
-* That being said, it was very difficult to get anything over a B+ in this class.
-* The prof is not too bad, he replies emails and is helpful if you reach out
-
-Positive Summary:
-* I really don't understand why he has so many poor ratings.
-* However, for some reason, McCuaig asks his T.A.
-* The professor himself is fine.
-* I always looked forward to going to class.
-* A great professor who is very clearly passionate about what he's teaching.
-
-University of Ottawa: Luc Poitras, BCH2333
-Negative Summary:
-* The professor was really useless and disrespectful with me.
-* Even though I got an A+ in this class, it was filled with frustration and a feeling of being powerless.
-
-Positive Summary:
-* I would rather take another course instead of taking Dr. Luc as my prof.
-* I think my time is more precious than his.
-* The way he emails is disrespecting the students.
-* However, the homework and partial labs seem easy at first sight but the TAs do not mess around.
-
-University of Ottawa: Luc Poitras, BCH3120
-Negative Summary:
-* Exams were mostly application, and very hard; rubrics were SO specific (must hit key words!)
-* It is quite unfair to blame him for how much material is in this class.
-* Im so sorry but he is the worst professor I have ever met in my life.
-* There are quite a lot of molecule names and reactions to memorize but it's not as bad as the people below me make it.
-
-Positive Summary:
-* Content was VERY interesting and slideshows were pretty organized.
-* The material is not difficult, but with no learning objectives, you're left trying to figure out what he may or not ask as there is a lot of information.
-* How do you ignore prof Najwa Haddad every week when she says to you "Hi have an amazing day"!.
-* Honestly, probably the fairest exams I've written in any of my classes and for this alone, you can probably guarantee yourself at least an A- if you study straight from the slides.
-
-University of Ottawa: Luc Poitras, BCH3170
-Negative Summary:
-* Without doubt one of the worst profs i have had during my undergraduate program.
-* He blames the problems on course and claims metabolism is hard.
-
-Positive Summary:
-* He basically reads off the slides, does not explain anything so going to lectures does not make any differences.
-* You will have to self teach a lot but he is very helpful in office hours.
-* Everything you need are in his lecture notes.
-* Dr. Poitras is very straightforward when it comes to midterms and finals; everything you need to know is on his slides.
-
-University of Ottawa: Luc Poitras, BCH3356
-Negative Summary:
-* the final exam is really difficult so maybe rewatch all the lectures to be prepared.
-* His lectures are unappealing and all over the place.
-* he says things in the beginning of the course that might make you think he is but he comes off as passive aggressive sometimes as if he's being forced to teach.
-* He's the worst prof I've encountered in all of uni.
-
-Positive Summary:
-* The lab itself was manageable but you are MAINLY interacting with TAs not Dr. Poitras.
-* For the exams, rewatch the lectures and when he says "I do this question every year" trust him and review the question.
-* Refuse to correct the evaluations if there are errors.
-* Does not post marks until the very end, which means you have no idea how you are doing in the class.
-
-University of Ottawa: Luc Poitras, BCH3756
-Negative Summary:
-* Doesn't answer questions and is very rude with students.
-* The class was too time consuming 6 weekly hour labs Weekly homework and prelabs 5 reports In-lab presentation every other week Midterm+final.
-* Luc can't write a comprehensive manual, which is very frustrating.
-* Work load +++, very tough on exams and goes outside what was covered in labs.
-
-Positive Summary:
-* If this lab is not mandatory for you avoid it at all cost.
-* He is unhelpful/vague during office hours.
-* The class is a lot and very time consuming, BUT you'll get good grades if you're competent since most of the stuff evaluated is pretty easy.
-* The most homework-heavy course Ive ever taken.
-
-University of Ottawa: Michael Mulvey, ADM2320
-Negative Summary:
-* He cares about students and is very passionate about marketing.
-* His exams are not HARD, but require studying and basic knowledge of the subject.
-* It's a waste of time because we are going through the book.
-
-Positive Summary:
-* Professor Mulvey is definitely the best marketing prof at Telfer.
-* Great Prof, Down to Earth, overall excellent experience taking his class; Cream of the crop when it comes to University profs.. You HAVE to go to class if you want to really benefit from the Mulvey experience.
-* He shows a lot of ad clips/video clips to convey the subject matter (very interesting).
-* I would recommend him to anyone interested in Marketing.
-
-University of Ottawa: Michael Mulvey, ADM3321
-Negative Summary:
-* This poor excuse of a prof doesn't even hand back the grades.
-* Unless this class is mandatory to you, I would not recommend taking this course as an elective since it demands a lot of your time due to heavy workload.
-* While you do need to (seriously) study for his exams and do your readings, it is all worth it in the end.
-* He is so passionate about consumer behaviour that it makes you want to pursue it as well
-
-Positive Summary:
-* He talks a lot about himself, (which is fine), but it can get kind of weird and excessive.
-* Even in class, he doesn't actually teach, just talks about his life really.
-* Gives good insight on the group project too if you ask him directly.
-* Prof Mulvey is amazing during the pandemic, he's easily best streamer I had since the start of online class.
-
-University of Ottawa: Paula Sauveur, GNG4170
-Negative Summary:
-* We had a few study sessions at her house.
-* She is the worst professor the University of Ottawa has ever hired.
-* Worst professor I've ever had, and likely the worst professor at uOttawa.
-* The notes/slide shows are a complete mess and seem random, she will put french paragraphs in notes (for the english section classes).
-
-Positive Summary:
-* Sadly there's no way out of taking her class for most students in eng.
-* We only saw her 5 times during the semester, the rest were pre-recorded lectures that were over a year old, and one of those 5 times she delivered the lecture on her phone while out shopping in a store.
-* Her course is not hard but is a considerably hostile environment in which she tries to strip students of as many marks as possible.
-* Course material is very light though, don't buy the textbook: everything is online.
-
-University of Ottawa: Paula Sauveur, GNG4570
-Negative Summary:
-* She is the worst professor in the northern hemisphere.
-* Doesn't know how to translate her french notes to her english ones, leaving multiple mistakes behind.
-* Absolutely disgusting display of teaching.
-* I mean the rating (1.2) speaks for itself, i don't know why she is even a university professor
-
-Positive Summary:
-* Refuses to teach, refuses to mark, refuses to answer student emails.
-* I'd like to write a fair review of Professor Sauveur that outlines the pros and cons of her marking strategy.
-* I promise you you wont even know what shes talking about for that entire lecture.
-* However, to be fair , shed be a strong 2/5 as a monkey, so its not entirely all bad.
-
-University of Ottawa: Sam Alvaro, SOC
-Negative Summary:
-
-Positive Summary:
-* Talks about research without referencing anything.
-* His exams are all online which is good but they aren't about your knowledge but how well you can find VERY specific details in lectures/textbook.
-* Condensing to points that differ from his.
-* if you're reading this i want to say that i loved social deviance and that i really wouldn't have gotten up at 8:30 monday mornings to go to any other class.
-
-University of Ottawa: Sam Alvaro, SOC1105
-Negative Summary:
-* He is not funny and people need to stop pretending he is.
-* Ridiculously condescending, picks on students, and embarrasses them in class when they ask questions (which is really unfortunate for first-years who are adapting).
-* I am in 2nd year and found the readings to be difficult, not 1st year material.
-
-Positive Summary:
-* This prof only uses Brightspace to evaluate students, including ALL of the exams.
-* The material is sometimes hard to understand so make sure you buy the book.
-* Lots of reading for this class but the lectures are just phenomenal.
-* He teaches real-world issues in such a comprehensive way, you just HAVE to take a class with him.
-
-University of Ottawa: Tanvir Quadir, ADM2304
-Negative Summary:
-* Explains the topic very well for a course with hard content
-
-Positive Summary:
-* Professor Quadir consistently goes the extra mile for students in his great preparation of materials and examples.
-* His assignment basically give you answers meaning they should be easy.
-* Very caring professor which will make recordings of the in-person lectures for students to review.
-* Midterm and final exam are not hard if you listen to his review session carefully.
-
-University of Ottawa: Tanvir Quadir, HSS2381
-Negative Summary:
-* Not a single negative thing to say about this dude.
-* Hate math and I enjoyed this stats class.
-* The lectures were a little boring, I always had to put them on 2x speed.
-* This guy was hands down my favourite professor during the semester
-
-Positive Summary:
-* Go to class/watch the lectures, do the homework, and textbook learning checks, they cover exactly what you need to know.
-* Super helpful prof, many evaluations and resources so you can practice.
-* I didn't go to class, just read the textbook, practiced the exercices, and watched the recordings he posts if I felt I needed clarification.
-* He cares about his students deeply and wants them to succeed.
-
-University of Ottawa: Victor Emerson, HSS2381
-Negative Summary:
-* go to class with an open mind, don't be afraid to ask the same question 100 times, he'll give 100 different examples.
-
-Positive Summary:
-* such a funny guy.. there's no need to take notes.
-* he's very encouraging to ask questions and he answers them wonderfully.
-* He has lots of experience with research, so lots of great examples.
-* Conveys the subject matter really well, and takes the time to make sure you understand what is being described
-
-University of Ottawa: Vida Dujmovic, ITI1120
-Negative Summary:
-* I learned a ton of concepts in a short amount of time due to her amazing lectures and difficult assignments.
-* Vida is not a hard prof at all; it's the subject matter that is hard.
-* The reason her tests can be difficult is because you need to have an understanding of EXACTLY what the code is doing in order to get the answer... Too strict and the course is hard, midterm questions are very tricky.
-* this course can be hard if you do not have previous programming experience.
-
-Positive Summary:
-* Highly recommend taking ITI1120 with Prof. Vida.
-* Very great Prof, ITI 1120 is super easy and they gave tons of resouces to help students succeed.
-* She's really nice and easy to follow during lectures, however there's a massive disparity in difficulty between the content she covers during class and the things you have to do for her assignments.
-* You can tell she cares about having her students understand the material and develop good coding skills.
-
-University of Ottawa: Wolfgang Koerner, POL2107
-Negative Summary:
-* He basically marks arbitrarily and is hard to come by during his office hours.
-* Do you like taking massive amounts of notes through hard to follow lectures, just to get handed a midterm with 6 poorly designed questions that can be answered in 2 sentences.
-* His lectures were a bit dry, but he always kept them on the short side.
-* The way he explains the subject is so efficient when you're trying to remember all the content.
-
-Positive Summary:
-* Im surprised by the amount of positive feedback.
-* The assignments are straightforward and relatively easy but you should probably start them a week or two in advance.
-* Also confused by the amazing ratings on here.
-* minimum work load, easy grader, and he gives you the exam questions before the test... what more do you want.
-
-University of Ottawa: Wolfgang Koerner, POL2108
-Negative Summary:
-
-Positive Summary:
-* A lot of people skip his lectures - don't.
-* Koerner is very accommodating and extremely nice.
-* I thought this class was going to be super easy and i wasn't going to learn much.... but my god, having the questions and researching the answers has taught me more about pol thought then any prof ever before.
-* You get the answers and you get the marks.
-
-University of Ottawa: Wolfgang Koerner, POL2207
-Negative Summary:
-* Knows the course is boring as hell and doesn't try to disguise that fact
-
-Positive Summary:
-* Best prof I've had so chill, easy going, and very informative.
-* Classes are always short which is amazing and he is always available to talk.
-* He knows his stuff and tries to make the best out of a lot of heavy material.
-* He realises the bore that is POL2207 and lets you know what's important, and what you don't need to know..
-
-University of Ottawa: Wolfgang Koerner, POL3102
-Negative Summary:
-* His lectures may be a little dry, but if you read the texts in advance you follow pretty well.
-* Koerner's class can seem confusing just about all the time.
-* Even though political thought can be dry, he tries to give you the basics.
-* Wolfgang is a cool person teaching a boring topic
-
-Positive Summary:
-* Take Koerner's classes every opportunity you have.
-* He is one of the nicest prof I ever had at UOttawa.
-* Hilarious guy, if you pay attention to the lectures  and catch his humor you will have a great time in his class.
-* Take notes on everything he says and regurgitate it on the exam and you're golden (I got an A and didn't buy the textbook).
+* Not a nice lady... has an intimidating presence.
+* Likes to give long and hard midterms and even harder finals.
+* Not very helpful when you speak to her either - will make you wish you didn't ask.
 
