@@ -8,7 +8,7 @@ const negativeFeedback = "This is the negative feedback";
 export default function Results(){
   return (
     <div className="container">
-      <label htmlFor="course-select">Course Name:</label>
+      <label htmlFor="course-select" name="course">Course Name:</label>
       <select id="course-select">
         {courses.map((course) => (
           <option key={course} value={course}>
@@ -18,10 +18,12 @@ export default function Results(){
       </select>
       
       <div className="feedback-box pos">
-          <textarea readonly value={positiveFeedback}></textarea>
+      <label htmlFor="posLabel"> Positive Feedback</label>
+          <textarea id="posLabel" readonly value={positiveFeedback}></textarea>
       </div>
       <div className="feedback-box neg">
-          <textarea readonly value={negativeFeedback}></textarea>
+      <label htmlFor="negLabel"> Negative Feedback</label>
+          <textarea id="negLabel" readonly value={negativeFeedback}></textarea>
       </div>
     </div>
   );
