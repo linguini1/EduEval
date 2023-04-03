@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 26px;
+  color: #333;
+}
+
+select {
+  appearance: none;
+  background-color: #f6f6f6;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%2399a9b4' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: grey;
+}

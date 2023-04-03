@@ -3,12 +3,14 @@ __author__ = "Matteo Golin"
 
 # Imports
 import pandas as pd
+import langdetect
 from pandas import DataFrame
-import re
 import functools
 from typing import Callable
 from textblob import TextBlob
 from googletrans import Translator
+from nltk.tokenize import sent_tokenize
+
 
 # Constants
 COLUMNS: dict[str, str | type] = {
@@ -16,38 +18,32 @@ COLUMNS: dict[str, str | type] = {
     "professor": "category",
     "course": "category",
     "comment": pd.StringDtype(),
+    "date": "datetime64[ns]"
 }
 MINIMUM_CHARS: int = 5
-SENTENCE_SIGNIFIER: str = r"[\.][\s*]|[!][\s*]|[\?][\s*]"
 SENTIMENTS: dict[int, str] = {
     -1: "negative",
-    0: "neutral",
     1: "positive",
 }
 
 
 def _sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
-    return re.split(SENTENCE_SIGNIFIER, comment)[:-1]  # TODO prevent splits on periods such as Prof. John Doe
+    sentences = sent_tokenize(comment)
+    return sentences
 
 
 def _sentiment(text: str) -> int:
     """
     Returns an integer to represent the sentiment polarity of the text.
-    1: positive
-    0: neutral
-    -1: negative
     """
 
     polarity = TextBlob(text).sentiment.polarity
 
-    if polarity <= -0.2:  # Negative
-        return -1
-
-    if polarity >= 0.2:  # Positive
+    if polarity >= 0:  # Positive
         return 1
-
-    return 0  # Neutral only if initial result was between -0.3 and 0.3
+    else:
+        return -1
 
 
 def analyze_sentiment(data: DataFrame) -> DataFrame:
@@ -57,6 +53,7 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
 
     data["comment"] = data["comment"].apply(_sentences)  # Split comments into a list of sentences
     data = data.explode("comment")  # Give each sentence its own row
+    data.reset_index(inplace=True)  # Re-index
     data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
     data = data[data["comment"].str.startswith("<NA>") == False]  # Filter out artifacts from the split
 
@@ -95,13 +92,13 @@ def filter_not_english(data: DataFrame) -> DataFrame:
     """Translates any non-english comments in the DataFrame."""
 
     translator = Translator()  # Create translator instance
+    langdetect.DetectorFactory.seed = 0
 
     def translate_comment(comment: str) -> str:
         """Returns the translated comment if it is not English, otherwise returns the original."""
 
-        if translator.detect(comment) == "en":
+        if langdetect.detect(comment) == "en":
             return comment
-
         return translator.translate(comment).text
 
     data["comment"] = data["comment"].apply(translate_comment)

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro',sans-serif;
+    
+  }
+  
+  /* Navbar styles */
+   .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0b0b;
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    margin-right: 60px;
+    height: 50px;
+    width: auto;
+
+  }
+  
