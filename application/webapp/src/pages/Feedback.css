@@ -7,15 +7,32 @@
   background-color: #fff;
 }
 
-label {
+label[for ="course-select"] {
   margin-bottom: 8px;
   font-size: 24px;
   color: #666;
+  position: absolute;
+  top: 15%;
+  left: 37%;
+}
+.upload-file{
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #666;
+  position: absolute;
+  top: 27%;
+  left: 30%;
 }
 
 input[type="text"],
 input[type="email"],
-select {
+
+select
+ {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  margin-top: 2px;
   margin-bottom: 16px;
   padding: 12px;
   border: none;
@@ -23,9 +40,6 @@ select {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 26px;
   color: #333;
-}
-
-select {
   appearance: none;
   background-color: #f6f6f6;
   padding-right: 30px;
@@ -35,10 +49,29 @@ select {
   background-size: 8px;
 }
 
+#upload-file {
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #666;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 26px;
+  color: #333;
+  appearance: none;
+  background-color: #f6f6f6;
+  padding-right: 30px;
+}
+
 .button-container {
-  display: flex;
+  position: absolute;
   justify-content: center;
-  margin-top: 30px;
+  margin-bottom: 12rem;
+  margin-right: 4rem;
 }
 
 button {
