@@ -7,8 +7,8 @@ import Results from "./pages/Results";
 
 //Components
 import {Routes, Route} from "react-router-dom"
-import Navbar from './components/Navbar';
 import PageLink from "./components/PageLink";
+import Navbar from "./components/Navbar";
 
 
 function App() {
