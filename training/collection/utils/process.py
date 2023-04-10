@@ -27,10 +27,10 @@ SENTIMENTS: dict[int, str] = {
 }
 
 
-def _sentences(comment: str) -> list[str]:
+def sentences(comment: str) -> list[str]:
     """Returns all the individual sentences in the list of comments."""
-    sentences = sent_tokenize(comment)
-    return sentences
+    separated_sentences = sent_tokenize(comment)
+    return separated_sentences
 
 
 def _sentiment(text: str) -> int:
@@ -51,7 +51,7 @@ def analyze_sentiment(data: DataFrame) -> DataFrame:
     Returns DataFrame with ratings split into individual sentences and assigned a sentiment score between -1 and 1.
     """
 
-    data["comment"] = data["comment"].apply(_sentences)  # Split comments into a list of sentences
+    data["comment"] = data["comment"].apply(sentences)  # Split comments into a list of sentences
     data = data.explode("comment")  # Give each sentence its own row
     data.reset_index(inplace=True)  # Re-index
     data["comment"] = data["comment"].convert_dtypes(pd.StringDtype())  # Make comment column strings
@@ -71,6 +71,28 @@ def define_types(data: DataFrame) -> None:
 
     for column, dtype in COLUMNS.items():
         data[column] = data[column].astype(dtype)
+
+
+def separate_comments(course_comments: pd.DataFrame) -> dict[str, str]:
+    """
+    Returns a dictionary containing the sentiment name as a key, and the string of comments associated with the
+    sentiment as a value.
+    {
+        "negative": "Some long string of negative comments.",
+        ...
+    }
+
+    :param course_comments A DataFrame containing the comments for a specific course and each comment's associated
+    sentimentality score:
+    """
+
+    # Collect categories
+    categories = {}
+    for sentiment in SENTIMENTS:
+        categories[SENTIMENTS[sentiment]] = course_comments[course_comments["sentiment"] == sentiment]["comment"]
+        categories[SENTIMENTS[sentiment]] = " ".join(categories[SENTIMENTS[sentiment]])
+
+    return categories
 
 
 # Filter functions
@@ -103,4 +125,3 @@ def filter_not_english(data: DataFrame) -> DataFrame:
 
     data["comment"] = data["comment"].apply(translate_comment)
     return data
-

@@ -4,34 +4,11 @@ __author__ = "Matteo Golin"
 # Imports
 import pandas as pd
 from summarizer import Summarizer
-from collection.utils.process import SENTIMENTS, _sentences
+from collection.utils.process import separate_comments, sentences
 import warnings
 
 # Constants
 NUM_SENTENCES: int = 4
-
-
-# Helper functions
-def separate_comments(course_comments: pd.DataFrame) -> dict[str, str]:
-    """
-    Returns a dictionary containing the sentiment name as a key, and the string of comments associated with the
-    sentiment as a value.
-    {
-        "negative": "Some long string of negative comments.",
-        ...
-    }
-
-    :param course_comments A DataFrame containing the comments for a specific course and each comment's associated
-    sentimentality score:
-    """
-
-    # Collect categories
-    categories = {}
-    for sentiment in SENTIMENTS:
-        categories[SENTIMENTS[sentiment]] = course_comments[course_comments["sentiment"] == sentiment]["comment"]
-        categories[SENTIMENTS[sentiment]] = " ".join(categories[SENTIMENTS[sentiment]])
-
-    return categories
 
 
 # Main
@@ -73,7 +50,7 @@ def main():
                 file.write(f"{sentiment.title()} Summary:\n")
                 print(f"{sentiment.title()} Summary:")
 
-                for s in _sentences(summary):
+                for s in sentences(summary):
                     file.write(f"* {s.strip()}\n")
                     print(f"* {s}")
                 file.write("\n")
