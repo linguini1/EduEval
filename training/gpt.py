@@ -4,6 +4,7 @@ __author__ = "Matteo Golin"
 # Imports
 import pandas as pd
 import openai
+from openai.error import InvalidRequestError
 from secret import API_KEY
 from collection.utils.process import separate_comments
 
@@ -11,7 +12,7 @@ from collection.utils.process import separate_comments
 ENGINE: str = "text-davinci-003"
 MAX_TOKENS: int = 1000
 NUM_SENTENCES: int = 5
-FILENAME: str = "gpt_summaries.txt"
+FILENAME: str = "data/gpt_summaries.txt"
 
 
 # Helper functions
@@ -26,12 +27,15 @@ def expansion_prompt(review_block: str, n_sentences: int) -> str:
 def ask(prompt: str) -> str:
     """Provide a prompt to the OpenAI language model and return the text."""
 
-    response = openai.Completion.create(
-        engine=ENGINE,
-        prompt=prompt,
-        temperature=0.5,
-        max_tokens=MAX_TOKENS
-    )
+    try:
+        response = openai.Completion.create(
+            engine=ENGINE,
+            prompt=prompt,
+            temperature=0.5,
+            max_tokens=MAX_TOKENS
+        )
+    except InvalidRequestError as error:
+        response = f"Error: {error.user_message}"
 
     return response.choices[0]["text"]
 
@@ -48,7 +52,7 @@ def main():
     grouped_data = grouped_data.apply(lambda x: x)  # Make DataFrame searchable
 
     # Open file to save GPT summaries
-    with open(FILENAME, 'w') as file:
+    with open(FILENAME, 'w', encoding="utf-8") as file:
 
         # Iterate through all unique combinations
         for school, professor, course in combinations:
@@ -63,8 +67,14 @@ def main():
             # Summarize with OpenAI and save results to text file
             for sentiment, ratings in sentimented_ratings.items():
                 summary = ask(expansion_prompt(ratings, NUM_SENTENCES)).strip()
-                file.write(f"{school}-{professor}-{course}\n")
-                file.write(f"{summary}\n")
+
+                # Write to file
+                file.write(f"{school}-{professor}-{course}-{sentiment}\n")
+                file.write(f"{summary}\n\n")
+
+                # Show in console
+                print(f"{school}-{professor}-{course}-{sentiment}")
+                print(f"{summary}\n")
 
 
 if __name__ == '__main__':
