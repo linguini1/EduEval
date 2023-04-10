@@ -2,13 +2,12 @@
 __author__ = "Hamnah Qureshi"
 
 # Imports
+import werkzeug.datastructures
 from flask import Flask, request, render_template
 from flask_cors import CORS, cross_origin
 import pandas as pd
 
 # Constants
-from werkzeug.datastructures import FileStorage
-
 STATIC_FOLDER: str = ".\\webapp\\build\\static"
 TEMPLATE_FOLDER: str = ".\\webapp\\build"
 API_ROUTE: str = "/api"
@@ -35,12 +34,12 @@ def index():
 def upload():
     """API route for uploading CSV file with professorial ratings for one school."""
 
-    file = request.files.get("file")
+    file: werkzeug.datastructures.FileStorage = request.files.get("file")
     if file is None:
         return 400  # Bad request (no file given)
 
     # file.save('data/userdata.csv') #if we want to save the csv file
-    df = pd.read_csv(file)
+    df = pd.read_csv(file.read())
     df.to_parquet('data/data_file.parquet.gzip')
 
     return 200  # Success
