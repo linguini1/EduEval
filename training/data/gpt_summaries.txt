@@ -1,232 +1,232 @@
 Carleton University-Ariel Fuenzalida-SOCI3055-negative
-• Assigns a large amount of reading that is not tested or discussed in class.
-• Exams are based on specific readings that are outlined by the professor.
-• Lectures are boring and difficult to follow.
-• Students must put in effort to do well in the class.
-• Listening to lectures for more than an hour is difficult.
+• Assigns an excessive amount of reading.
+• Reading not tested on or discussed in class.
+• Lectures boring and difficult to follow.
+• Informs students what to read for exams.
+• Poor performance if not keeping up with reading.
 
 Carleton University-Ariel Fuenzalida-SOCI3055-positive
-- Highly recommend professor
-- Interesting and engaging course content
-- Final paper is 12-14 pages with no topics given
+- Highly recommended professor
+- Interesting and engaging content
+- 30% of course grade for participating in weekly discussion
+- Final paper is 12-14 pages with no given topics or expectations
 - Genuinely cares about student success
-- Lectures can be long, but exams and essays are easy
+- Makes material interesting and easy to understand
+- Offers help and support in office hours
+- Gets what you put into it
+- Course material is interesting but readings are optional and heavy
 
 Carleton University-Cristina Ruiz Martin-SYSC2004-negative
-• Professor was unhelpful.
-• Exams were difficult.
-• She did not provide sufficient feedback.
-• Her grading system was unclear.
-• Her lectures were not engaging.
+• She was unhelpful.
+• Her exams were difficult.
+• She did not provide helpful feedback.
+• She was unresponsive to student questions.
+• She did not explain concepts in an understandable way.
 
 Carleton University-Cristina Ruiz Martin-SYSC2004-positive
-She was always available for questions and responded quickly.
-
-• Professor offered course as an online offering in 2021
-• Lectures were short (20 minutes) and not related to assignments
+• Professor offered course online in 2021
+• Lectures were short (20 min) and unrelated to assignments
 • Assignments were open-ended projects
-• Professor was available for questions and responded quickly
 
 Carleton University-Cristina Ruiz Martin-SYSC2006-negative
-• Cristina is decent, despite bad reviews
-• Has a bit of an accent, but easy to get used to
+• Cristina is decent
+• She has an accent
 • Material can be confusing
-• Practice exams given out are helpful
+• Practice exams are helpful
+• Bad reviews exist
 
 Carleton University-Cristina Ruiz Martin-SYSC2006-positive
-• Dr. Ruiz Martin is better in person than her reputation suggests
-• Learning C is difficult, but she makes an effort to ensure understanding
-• She takes time to answer questions and provides examples and visual explanations
-• Most negative reviews are from first year students
-• Exams and midterms are worth a lot, but she does her best to help students understand the material
+• Dr. Ruiz Martin is better in person than her reputation suggests.
+• Learning C is difficult, but she makes an effort to ensure understanding of concepts.
+• She takes an effort to answer questions and provides lots of examples/visual explanations.
+• The midterm and final exams are worth a lot, but she does her best to teach the material.
+• She is very different in person, taking time to understand and help visualize student questions.
 
 Carleton University-Lynn Marshall-ECOR1606-negative
-- Final exam is not a good reflection of the quizzes, labs or material
-- Take the textbook seriously
-- Assignments are hard
-- Final exam is extremely hard
-- Very tough marking scheme
-- Lectures are helpful in tests
+• Final exam is not a good reflection of quizzes, labs or material.
+• Take the textbook seriously.
+• Assignments are hard.
+• Final exam is extremely hard.
+• Very tough marking and creating questions for tests and finals.
+• Heavily dependant on online material.
 
 Carleton University-Lynn Marshall-ECOR1606-positive
-• She genuinely wants her students to do well and is clear on expectations. 
-• Midterms and lab final are fairly easy. 
-• Labs require some work, but are doable. 
-• Lectures are monotone, but material is explained in a clear way.
-• Professor Marshall is great at teaching and is very helpful.
+• One of the most liked professors, she is clear on expectations and wants students to do well.
+• Course material is easy but requires effort.
+• Lectures are so-so, but she is good at explaining the criteria.
+• Labs require some work but are manageable.
+• Midterms and finals are fair, and she is helpful when reviewing evaluations.
 
 Carleton University-Lynn Marshall-SYSC2002-negative
-• Boring classes 
-• Rude and shows no patience when answering questions 
-• Lectures are monotonous 
-• Uncommitted and rarely available 
-• Discouraging and mean attitude towards students 
-• Unhelpful and expects students to debug problems themselves
+• Boring lectures and classes 
+• Rude and impatient when students ask questions 
+• Least committed professor 
+• Only available during office hours 
+• Discouraging to students 
+• Mean and unhelpful when students ask questions
 
 Carleton University-Lynn Marshall-SYSC2002-positive
--Professor is not great at teaching and can be difficult to understand 
--Course notes are helpful 
--Expects a lot from students with only basic programming knowledge 
--Not helpful in office hours 
--Easy exam due to lack of teaching
+• Uses examples and explains in detail when needed
+• Course notes are helpful
+• Expects a lot from second year C++ course
+• Not helpful in office
+• Easy exam, but not great teaching
 
 Carleton University-Lynn Marshall-SYSC2004-negative
-• Pre-recorded lectures from previous years
-• Final exam with 85 questions, 20 long answer and 65 multiple choice
-• Can't do poorly in this class
-• Experiences keep getting worse
-• Overall, a really bad instructor
+• Professor does an awful job teaching online
+• Lectures are pre-recorded videos from previous years
+• Experience keeps getting worse over 4 different courses
+• Final exam with 85 questions, 20 of them long answer and 65 multiple choice
+• Final was long and had a few tough questions
 
 Carleton University-Lynn Marshall-SYSC2004-positive
-• Prof wants students to succeed and provides plenty of opportunities for bonus marks 
-• BrightSpace page is organized with examples and videos 
-• Prof is available for questions and responds quickly to emails 
-• Labs and assignments should be done independently 
-• Exams are straightforward and based on previous years questions
+• Professor provides plenty of bonus opportunities to engage with course material in a practical way 
+• Brightspace page is organized with examples and videos 
+• Very fun class overall 
+• Cares about students and responds to emails quickly 
+• Straightforward exams with previous years available
 
 Carleton University-Lynn Marshall-SYSC2006-negative
-Class was always interesting and engaging. The professor was always willing to help.
+He doesn't care about the students. Very unorganized and unprepared for class. He was also very unhelpful when it came to grading.
 
-• Lectures were good but could be boring
+Bullet Point Summary:
+• Good lectures, though occasionally boring
 • Worst professor ever
-• Class was interesting and engaging
-• Professor was willing to help
-• Assignments were difficult but fair
-• Grading was consistent and clear
+• Does not care about students
+• Very unorganized and unprepared for class
+• Unhelpful when it comes to grading
 
 Carleton University-Lynn Marshall-SYSC2006-positive
-• Professor Marshall uses pre-recorded lectures to explain course material.
-• She is easily accessible outside of class for help.
-• Grading criteria is clear and assignments are simple.
-• Midterm and final exams are moderately difficult but fair.
+• Professor Marshall uses pre-recorded lectures which cover material on tests, assignments, exams and labs. 
+• She is easily accessible outside of class for help. 
+• Her lectures are well organized and she provides clear grading criteria. 
+• Midterm and final exams are moderately difficult but fair. 
 • Plenty of material, practice and homework available on culearn.
 
 Carleton University-Lynn Marshall-SYSC3303-negative
 • Expect to do late nights
-• Marks by removing marks for mistakes
-• Asks vague questions with specific answers
+• Marks by removing marks for wrong answers
+• Asks vague questions with specific answers in mind
 • Makes students memorize arbitrary things
 • Has an intimidating presence
 • Gives long and hard midterms and finals
-• Not helpful when speaking to her
+• Not very helpful when asking questions
 
 Carleton University-Lynn Marshall-SYSC3303-positive
-• Knows the subject well and gives good lectures
-• Notes are good
-• Helpful when asked questions
+• Knowledgeable in subject matter 
+• Gives good lectures and notes 
+• Helpful when asked questions 
 • Strict marker 
-• Midterms and final exams are long
-• Picky at marking - requires perfect syntax
+• Midterms and final exams are lengthy and require perfect syntax
 
 Carleton University-Mengchi Liu-COMP3005-negative
 .
 
--Assignments are poorly worded and time consuming.
--Lectures are confusing and unhelpful.
--Midterm and final exam are long and difficult.
--Poor communication with students.
--Slides are riddled with errors and typos.
--Monotone voice and thick accent.
--Assignments are confusing and due dates are close together.
--Little emphasis on practice.
+• Poorly worded assignments and time-consuming work. 
+• Confusing lectures and slides with typos and grammar errors. 
+• Unhelpful responses to questions from students. 
+• Midterm was a logistical trainwreck and final was too long and difficult. 
+• Unorganized, uninterested and monotone during lectures.
 
 Carleton University-Mengchi Liu-COMP3005-positive
-but not great either.
+if you don't mind reading his slides
 
-• Professor Liu is generous with extensions and his assignments are based on lecture notes.
-• Lectures are fast-paced and office hours are often canceled.
-• Midterms and Exams are fair if you review the material and attend class.
-• Lecture slides are full of typos and assignments are hard to do due to buggy programs.
-• Professor Liu is not good at teaching and provides little help outside of class.
+• Lectures are fast-paced, office hours are often canceled, and assignments are marked slowly.
+• Assignments and tests are based on lecture notes, and the course is not difficult to complete.
+• Lecture slides are full of superfluous information and errors, and the professor reads them word-for-word in class.
+• Professor is accessible outside of class, but does not provide helpful answers to questions.
+• Exam is easy, but assignments are difficult due to buggy software and lack of clarity.
 
 Carleton University-Michael Runtz-1902-negative
-• Very difficult to get ahold of professor and TAs.
-• Little guidance and assistance with material in the course.
-• Should not be online due to professor being remote.
-• Brutal, especially for a CuLearn course.
-• Described as a "wonderfully crazy man".
+• Very difficult to get ahold of professor and TAs 
+• Little guidance and assistance with material 
+• Should not be online due to professor being remote 
+• Brutal experience, especially for a CuLearn course 
+• Described as "wonderfully crazy"
 
 Carleton University-Michael Runtz-1902-positive
-- Bob Ross of Ontarian natural history 
-- Lectures uploaded to BS, but technical issues
-- Easy A, but interesting and engaging
-- Lighthearted, but requires respect
-- White Chris Rock, best course at Carleton
+• Bob Ross of Ontarian natural history 
+• Easy 90 if you take good notes 
+• Lectures uploaded to BS with technical issues 
+• Great class with an easy A 
+• Lighthearted but requires respect and effort
 
 Carleton University-Paul Mkandawire-HUMR2202-negative
-• Professor is very rude and disrespectful
-• Course is harder than expected
+• Extremely confusing lecturer
+• Rude and disrespectful
+• Unaccessible and has no empathy
+• Course is harder than 4th year courses
 • Little to no criteria for grading
-• Inaccessible and unresponsive to emails
-• Confusing lectures and long, repetitive, and boring
 
 Carleton University-Paul Mkandawire-HUMR2202-positive
-• Attendance is required and taken with paper and pencil. 
-• Material is interesting but instructor can't teach it.
-• Instructor is disrespectful to students' needs and does not answer emails.
-• Exams and assignments have high expectations and not much time given.
-• Instructor is not clear with requirements, not flexible or understanding. 
-• Paul is nice, cool guy in-person, but is geared towards assigned readings.
+• Attendance is required for the class and the tutorials. 
+• Material is interesting but instructor does not explain things well. 
+• Exam and assignment requirements are not clear and not much guidance is given.
+• Instructor does not respond to emails and does not seem to care for students.
+• Paul is a nice guy but his class is heavily based on assigned readings and he is not flexible.
 
 Carleton University-Ramy Gohary-SYSC2320-negative
-He is a great professor, and I highly recommend him.
+He is a great professor who is willing to help and encourages his students to do their best.
 
-• Gives tough dad vibes
-• Truly cares about students
-• Midterm and exams are hard
-• Changed grading scheme when many failed midterm
+• Gives tough dad vibes in class
+• Wants every student to pass
+• Changed grading scheme when a lot of people failed the midterm
 • Passionate when teaching
-• Highly recommended
+• Great professor who is willing to help and encourages students
 
 Carleton University-Ramy Gohary-SYSC2320-positive
-- Amazing professor who shows true passion while teaching
-- Responsive to emails within seconds
-- Talented and makes a very difficult course look easy
-- Cares for his students and wants them to do well
-- Does not allow phones in class for the better
+• Amazing professor who shows true passion while teaching 
+• Responds to emails within seconds 
+• Makes difficult course look easy 
+• Great at answering questions and clarifying concepts 
+• Makes sure students understand the material 
+• Very generous with midterm marking 
+• Does not allow phones in class 
+• Expectations for midterm/exam are reasonable 
+• Highly knowledgeable, funny, and engaging
 
 Carleton University-Ramy Gohary-SYSC3600-negative
-• Dr Gohary is an excellent professor who is highly recommended. 
-• He is organized and his lectures are clear. 
-• He is approachable and helpful. 
-• He is a great communicator. 
-• He usually drops one quiz.
+• Dr. Gohary is an excellent professor who is highly recommended.
+• He provides helpful feedback and is available for questions.
+• His lectures are clear and organized.
+• He is willing to be flexible with deadlines and assignments.
+• He usually drops one quiz from the final grade.
 
 Carleton University-Ramy Gohary-SYSC3600-positive
--Amazing professor who looks for opportunities to help students out
--Explains course material well and tests are based on homework
--Midterm and final exams are fair and labs are easy
--Very helpful professor who takes time to clarify questions
--Doing the homework and problem sets is essential for success
+-Amazing professor who looks for opportunities to help his students out
+-Easy labs, fair final and midterm
+-Tests every few weeks based on the homework
+-Explains answers instead of just saying them
+-Do the problem sets for an easy A
 
 Carleton University-Sam Dube-69105-negative
-• "He is a great professor, with a lot of enthusiasm and knowledge of the subject." 
-• "He is really helpful and always willing to answer questions." 
-• "He takes the time to explain concepts and make sure everyone understands." 
-• "He has a great sense of humour and makes the classes fun."
-• "He always stays on top of the material and keeps the class interesting."
+• "He is an amazing professor who really cares about his students."
+• "He is very organized and makes the material easy to understand."
+• "He is always available to answer questions and provide extra help."
+• "He is funny and makes the class enjoyable."
+• "He is very knowledgeable and passionate about the subject."
 
-• Great professor with knowledge and enthusiasm
-• Helpful and answers questions
-• Explains concepts and ensures understanding
-• Has a great sense of humour and makes classes fun
-• Stays on top of material and keeps classes interesting
+• He is an amazing professor who cares about his students.
+• He is organized and makes the material easy to understand.
+• He is always available to answer questions and provide help.
+• He is funny and makes the class enjoyable.
+• He is knowledgeable and passionate about the subject.
 
 Carleton University-Sam Dube-69105-positive
-• Dube is an awesome professor who is student-oriented and has great jokes and stories. 
-• Mingarelli taught him well and is also a great professor. 
-• Dube is the funniest professor and students can't sleep in his class. 
-• He is one of the best professors in Carleton and is very nice, reasonable and looks out for students. 
-• He is the greatest professor and is very understanding.
+• Dube is an awesome professor with great teaching skills and a great sense of humour 
+• Mingarelli taught Dube well, making it hard to tell who is better 
+• Dube is student-oriented and has the best stories 
+• Dube is an amazingly awesome, great and interesting professor 
+• Dube is a very nice man and a very reasonable teacher who looks out for students
 
 Carleton University-Siva Sivathayalan-91111-negative
-and follow his lectures.
+his lectures.
 
-• Unhelpful and rude
-• Difficult to understand lectures
-• One of Carleton's worst professors
-• Has a tendency to break overhead projector
-• Not the worst teacher
+• Unhelpful and rude 
+• Not the worst teacher 
+• One of Carleton's worst professors 
+• Hard to understand lectures 
+• Likely to break the overhead projector
 
 Carleton University-Siva Sivathayalan-91111-positive
 • Intolerant 
@@ -238,192 +238,682 @@ Carleton University-Siva Sivathayalan-91111-positive
 
 Carleton University-Siva Sivathayalan-CIVE4301-negative
 • Terribly Organized 
-• One of the worst profs 
+• One of the worst profs at Carleton
+• Civil Engineering degree 
 • Heard Siva was difficult 
-• Very easygoing 
-• Will work hard and learn a lot
+• Easygoing, but hard work and lots to learn
 
 Carleton University-Siva Sivathayalan-CIVE4301-positive
 actively learn.
 
-• Flexible and easy-going attitude
-• Lectures focus on theory, with examples in tutorials
-• Knowledgeable in geotechnical/foundation engineering
-• Posts useful supplementary lecture notes
-• Emphasizes fundamentals and explains concepts well
+- Fast-paced environment that emphasizes fundamentals
+- Flexible and easy-going attitude
+- Lectures focus on theory with examples in tutorials
+- Nice to students and knowledgeable in geotechnical/foundation engineering
+- Supplementary lecture notes and tutorials help to get a good footing
+- Pushes students to proactively learn
 
 Carleton University-Siva Sivathayalan-ECOR1606-negative
-He's really disorganized and doesn't explain the concepts very well. The exams are really hard. He's a nice guy though.
-
-• Professor is disorganized and does not explain concepts well.
-• Material can be learned from textbook.
-• Lectures are difficult to understand.
-• Exams are challenging.
-• Professor is a nice person.
+• Terrible professor who is difficult to understand
+• Not worth attending classes
+• Material can be learned from the textbook
+• Tests are challenging
+• Grading is fair
 
 Carleton University-Siva Sivathayalan-ECOR1606-positive
-• "The professor is incredibly knowledgeable and always willing to help."
-• "The professor is very organized and always prepared for class."
-• "The professor is always available to answer questions and provide support."
-• "The professor is very engaging and makes the material easy to understand."
-• "The professor is always on time and provides helpful feedback."
+• "The professor is very knowledgeable and helpful."
+• "The professor is always available and willing to help."
+• "The professor is very organized and professional."
+• "The professor provides helpful feedback and encourages students to ask questions."
+• "The professor is friendly and approachable."
 
-• The professor is knowledgeable and willing to help.
-• The professor is organized and prepared for class.
-• The professor is available to answer questions and provide support.
-• The professor is engaging and makes the material easy to understand.
-• The professor is on time and provides helpful feedback.
+• Knowledgeable and helpful
+• Always available and willing to help
+• Organized and professional
+• Provides helpful feedback
+• Encourages students to ask questions
 
 Carleton University-Tamara Kotar-HUMR2001-negative
 • 4 video quizzes, 3 other assignments, and a final in-class exam 
-• Lowest grade is dropped
-• Lectures are information-heavy and jump back and forth between topics
-• Suggestion to take notes on a computer
-• Not a great professor, not approachable, and not effective at conveying information
+• Lowest grade is dropped 
+• Lectures are information heavy and jump between topics 
+• Taking notes on a computer is recommended 
+• Not a great professor; not approachable or effective at conveying information
 
 Carleton University-Tamara Kotar-HUMR2001-positive
 .
 
-• Dr. Kotar is highly professional, resourceful and caring towards students.
-• She provides good feedback and her lectures are interesting.
-• She has creative evaluation techniques and is understanding and kind.
-• She is an easy grader and her assignments are time consuming but easy to get good marks.
-• She is polite, full of energy and loves teaching.
+• Dr. Kotar is professional, resourceful, and willing to answer questions. 
+• She is one of the best professors at Carleton, caring and creative. 
+• She is understanding and kind, and her evaluation technique is different from other professors. 
+• She is an easy grader, clear and concise in her expectations, and excited to teach. 
+• Her assignments are time consuming, but easy to complete.
 
 University Of Toronto-Andrew Meyertholen-PHY132-negative
-• "The professor is very knowledgeable and organized." 
-• "He provides a lot of helpful resources." 
-• "His lectures are always engaging and interesting." 
-• "He's always willing to help and answer questions." 
-• "He's a great communicator and teacher."
+• "She is an excellent teacher who goes above and beyond to help her students."
+• "She has a great sense of humor and makes the class enjoyable."
+• "She is very knowledgeable and passionate about the subject."
+• "She is very organized and makes sure everyone understands the material."
+• "She is always available to answer questions and provide feedback."
 
-• The professor is knowledgeable and organized. 
-• He provides helpful resources. 
-• His lectures are engaging and interesting. 
-• He is willing to help and answer questions. 
-• He is a great communicator and teacher.
+• Excellent teacher who goes above and beyond to help students.
+• Great sense of humor and makes the class enjoyable.
+• Very knowledgeable and passionate about the subject.
+• Very organized and ensures everyone understands the material.
+• Always available to answer questions and provide feedback.
 
 University Of Toronto-Andrew Meyertholen-PHY132-positive
-• Excellent teaching and explanations 
-• Tests are fair 
-• Sense of humour 
-• Pre-class videos helpful 
-• Kind and accessible out of class 
-• Demonstrates concepts excellently 
-• Takes effort to help students 
-• Willing to meet with students outside of class 
-• Explains concepts in an easy to understand way
+-Excellent teaching, explains concepts clearly, and answers questions
+-Fair tests and sense of humour
+-Well-prepared for class and keeps class engaged
+-Caring and attentive, helpful outside of class
+-Pre-class videos are useful and concepts are easy to understand
 
 University Of Toronto-James Hong-FINA4329-negative
-His exams are fair and he is willing to help you understand the material.
+His exams are incredibly difficult but he is willing to work with you.
 
-• Privilege to learn about life insurance and risk management 
-• Lectures kept students awake and entertained 
-• Heavy grading on group project
-• Exams are fair
-• Willing to help students understand material
+• Privileged to learn about life insurance and risk management
+• Lectures kept students awake and entertained
+• Assigns one group project that is graded heavily
+• Exams are difficult, but professor is willing to work with students
 
 University Of Toronto-James Hong-FINA4329-positive
-• Professor Hong uses lectures and guest speakers to bring real world experience to the classroom.
-• No textbook required, with two exams and one group project.
-• Exams are straight forward from his slides and he takes attendance.
-• Highly recommended for elective, with a great way of teaching that encourages participation.
-• Class is worth the 8am lecture, with no PowerPoints and no textbook.
+• Professor Hong brings real world experience and makes lectures interesting 
+• No textbook required, lectures and guest speakers used
+• Two exams non-comprehensive and one group project
+• Exams straight forward from slides and attendance mandatory
+• Highly recommended for elective, great learning experience
 
 University Of Toronto-Katherine Daignault-STA257-negative
-• Poorly prepared and unengaging lectures that are read off of slides
-• Tests are much harder than what is taught in lectures
-• Heavy pre-lecture prep and participation marks with unclear criteria
-• Tests are difficult, ambiguous and have no clear relationship to the course material
-• Final exam is extremely difficult and not related to the course material
+• Lectures are boring, repetitive, and read directly from slides.
+• Tests are extremely difficult, not related to course material, and much harder than examples in class.
+• Participation requirements are annoying with unclear marking criteria.
+• Slides are empty when reviewing for the exam.
+• Questions are strange and ambiguous.
 
 University Of Toronto-Katherine Daignault-STA257-positive
-• Lectures are detailed and helpful for quizzes/exams. 
-• Quizzes are time-intensive and need lots of work. 
-• Pre-recorded videos are reading slides and lecture is mostly repeating slides. 
-• Has double-standards and makes mistakes in simple calculations. 
-• Tests are not representative of course material or preparation questions.
+The final was hell.
+
+• Lectures are detailed and helpful for quizzes and exams
+• Quizzes are time-intensive and need lots of work
+• Final is difficult and not representative of course material
+• Professor has typos in slides, double standards, and makes mistakes in calculations
+• Refuses to answer questions and has a condescending attitude
 
 University Of Toronto-Katherine Daignault-STA302-negative
-• Midterm exam was difficult and grading scheme is strict
-• Lectures are reading off slides and quizzes are hard
-• Assignments are long and require a lot of work
-• Grading is late and professor has no empathy
-• Terrible experience and tests are unrelated to course material
+-Midterm exam is difficult, so prepare well
+-Strict grading scheme and ambiguous problems on assignments and exams
+-Lectures are basically reading slides and tests are hard
+-COVID-19 changed the marking scheme to heavily weight assignments
+-Terrible experience with no empathy and no accommodation for accessibilities
 
 University Of Toronto-Katherine Daignault-STA302-positive
--Fair instructor with lenient extensions 
--Manageable assignments and final projects 
--Clear lectures and explanations 
--Strict criteria and unclear grading expectations 
--Too many assessments and time commitment required
+• Fair instructor with lenient extensions
+• Manageable assignments and final project
+• Clear lectures and explanations
+• Strict criteria and unclear grading expectations
+• Too many assessments and workload
+• Unresponsive to questions and easily offended
+• Inconsistent marking and grading
 
 University Of Toronto-Maria Papaconstantinou-HMB203-negative
-She is a great professor and very knowledgeable in the field.
+She was always available for help. She was very nice and approachable.
 
-• Great professor and knowledgeable in the field 
-• Course was test heavy 
-• Lectures were repetitive 
-• Did not discuss nuances of global health 
 • Teaches in a boring way
+• Lectures are repetitive
+• Does not discuss nuances of global health
+• Course is test heavy
+• Very nice and approachable
+• Always available for help
 
 University Of Toronto-Maria Papaconstantinou-HMB203-positive
-• Dr. P's lectures were excellent and opened eyes to global health challenges 
-• Group work was enjoyable and an overall great learning experience 
-• Dr. P is one of the best profs at the university, kind and helpful 
-• Lectures were interesting and easy to follow, group work was enjoyable 
-• Very approachable, helpful, and amicable; genuinely cares about her students
+• Dr. P's lectures were excellent and opened eyes to global health challenges.
+• Group work was enjoyable and an overall awesome learning experience.
+• Dr. P is kind, helpful and her lectures are interesting and easy to follow.
+• Exams questions are confusing and depend on rote memory.
+• Dr. P is approachable, helpful and amicable.
 
 University Of Toronto-Maria Papaconstantinou-HMB204-negative
 .
 
-• Professor tends to ramble during lectures, making content difficult to understand.
-• In-class question period is overly long.
-• Emails are quite harsh.
-• Explanations are too vague.
-• Overall teaching style is difficult to follow.
+• Professor rambles a lot, complicating content
+• In-class question period runs on for too long
+• Quite harsh with emails
+• Explanations are too vague
 
 University Of Toronto-Maria Papaconstantinou-HMB204-positive
-• Professor is knowledgeable and helpful
-• Tests are fair and easy if you study
-• Pacing of lectures is inconsistent
-• Can be condescending and disrespectful
-• Teaching style is great, and she is fun to learn from
+• Professor enjoys teaching and is clear on what will be on the test
+• Tests are fair and easy if students study
+• Lectures are inconsistent in pacing and attitude is palpable and disrespectful
+• Overcomplicates words and stutters over explanations
+• Kind, accessible, and fun to learn from
 
 University Of Toronto-Maria Papaconstantinou-HMB265-negative
-• Terse when dealing with student questions and an extremely harsh grader 
-• Epistasis lecture needs updating as figures are poor and hard to follow 
-• Not a nice or cooperative professor and not very competent 
-• Lecture style unhelpful and confusing, content tough and exams horrible 
-• Unable to keep a train of thought, making it hard to follow in class
+- Terse professor when dealing with student questions and extremely harsh grader
+- Explanations are fairly clear and clarifications are given for confused students
+- Epistasis lecture needs updating as it is hard to follow due to poor figures
+- Content is tough and 2016 midterm and exam were HORRIBLE
+- Lecture style is unhelpful and confusing, lack of clarity and inability to keep a train of thought
 
 University Of Toronto-Maria Papaconstantinou-HMB265-positive
 • Dr. P is knowledgeable, caring, and responds quickly to emails.
-• Lectures are clear, quizzes and tests are fair, and she responds to emails quickly.
-• She genuinely wants students to learn and her lecturing style is great.
-• Online assignments help keep up with the course material.
-• Tests are fair and reflect the content covered in the lectures and assignments.
+• Her lectures are clear, her quizzes and tests are fair, and she responds to emails very quickly. 
+• Her slides are clear and up to date, and she is always available to answer questions.
+• She genuinely cares that her students do well and her lectures are organized and the content is clearly presented.
+• The course includes a number of different teaching approaches that help reinforce the material.
 
 University Of Toronto-Maria Papaconstantinou-HMB265H-negative
-She is very approachable and open to questions and discussions.
+She is a great lecturer.
 
-• Professor is knowledgeable about genetics.
-• She is passionate and clear in her teaching.
-• She is approachable and open to questions and discussions.
-• She cares about her students.
-• Passing the course requires memorizing random facts unrelated to genetics.
+• She is passionate about genetics and knowledgeable about the subject.
+• She is a great lecturer.
+• She is very clear, but very tough.
+• She requires students to memorize random facts (not related to genetics) to pass the course.
+• She is one of the few professors that actually cares about her students.
 
 University Of Toronto-Maria Papaconstantinou-HMB265H-positive
-• Dr. P is an excellent professor who is caring, enthusiastic, and provides clear lectures. 
-• Tests are fair but challenging and require attendance and effort.
-• Learnsmart assignments don't require textbook reading.
-• Encourages application of concepts rather than regurgitation.
-• Recommended to take the course in the summer.
+• Dr. P is a helpful and enthusiastic professor who emphasizes important points in lecture.
+• Her tests are tricky, but fair.
+• She is willing to answer questions and provide explanations.
+• Encourages application of concepts rather than just memorization.
+• Recommends taking the course in the summer rather than the fall.
 
 University Of Toronto-Michael Khan-RSM100-negative
-• Course is doable with attendance and note taking.
-• Midterm and final make up over 60% of grade.
-• Final is not curved down, but is difficult.
-• Lectures and guest speaker notes are testable.
-• Grading is tough and random.
+• Course is doable with attendance and note taking. 
+• Midterm and final make up over 60% of the mark. 
+• Tests are heavily based on memorization. 
+• Final is not curved down, but is difficult. 
+• Lectures are boring but testable.
+
+University Of Toronto-Michael Khan-RSM100-positive
+Error: This model's maximum context length is 4097 tokens, however you requested 5211 tokens (4211 in your prompt; 1000 for the completion). Please reduce your prompt; or completion length.
+
+University Of Toronto-Michael Khan-RSM427-negative
+.
+
+• Khan was not a good professor for RSM100.
+• 15% of course mark was based on participation with an unrealistic rubric.
+• Getting on his bad side could lead to being "screwed over".
+• He was described as "hilariously bad".
+• He was the only one teaching this course.
+
+University Of Toronto-Michael Khan-RSM427-positive
+• Mandatory participation worth 20% of grade 
+• Extensive and interactive lectures 
+• Multiple-choice tests are fair 
+• No leniency on participation marks 
+• Talks a lot about himself but is a friendly and genuine person
+
+University Of Toronto-Nicole Mideo-EEB325-negative
+• Midterm was hard and readings were included on tests. 
+• Grading expectations were unclear, and voicing opinions was met with snarky comments. 
+• She is a tough grader and instructs TAs to be the same. 
+• Midterm average was low, and office hours were cancelled after grades were returned. 
+• Topics were interesting, but the marking was poor and pseudoscience was taught.
+
+University Of Toronto-Nicole Mideo-EEB325-positive
+- Passionate and clear lectures 
+- Very approachable and animated 
+- Material is mostly memorization 
+- Midterm and final averages were low 
+- Participation marks based on quizzes with misleading questions 
+- Answers expected to state something not asked in the question 
+- Super young but super smart 
+- Very clear, good at teaching, and her course is tons of fun
+
+University Of Toronto-Sian Patterson-BCH210-negative
+Error: This model's maximum context length is 4097 tokens, however you requested 4865 tokens (3865 in your prompt; 1000 for the completion). Please reduce your prompt; or completion length.
+
+University Of Toronto-Sian Patterson-BCH210-positive
+Error: This model's maximum context length is 4097 tokens, however you requested 7071 tokens (6071 in your prompt; 1000 for the completion). Please reduce your prompt; or completion length.
+
+University of Ottawa-Diane Pacom-SOC-negative
+• Professor forces students to analyze society. 
+• Students do not need to buy expensive books. 
+• Teacher cares about the student. 
+• Negative and sarcastic comments were left. 
+• Acumen of those leaving negative comments is questioned.
+
+University of Ottawa-Diane Pacom-SOC-positive
+• Award winning professor with the highest recognition in Canada 
+• Speaks multiple languages and internationally recognized 
+• Cares about students and encourages them to succeed 
+• Explains topics in an easy to understand way 
+• Has a tendency to brag about her achievements
+
+University of Ottawa-Diane Pacom-SOC2700-negative
+• Born in Africa and Greek, lived and taught in New York
+• Cares whether students learn or not
+• Requires a lot of reading (books and long articles)
+• Not suitable for serious students
+• Has some weird friends
+
+University of Ottawa-Diane Pacom-SOC2700-positive
+• Exceptional course taught by Madame Pacom
+• Very knowledgeable and respectful of students 
+• Available to assist and provide examples 
+• Dynamic, interesting and funny 
+• Makes students think critically
+
+University of Ottawa-Gordon Lenjosek-ECO1102-negative
+Bullet Point Summary: 
+• Professor Lenjosek is rude and makes life difficult for students 
+• Lectures are long, boring, and unclear 
+• Midterms are designed to make students fail 
+• Tests are difficult and material is easy to self-teach 
+• Arrogant with a personality hard to relate to
+
+University of Ottawa-Gordon Lenjosek-ECO1102-positive
+- Clear expectations for real world preparation 
+- Textbook is important and exams are fair 
+- Dry lectures, but textbook and slides are useful 
+- Accessible outside of class and willing to help 
+- Midterms and exams are difficult, but achievable with studying
+
+University of Ottawa-Gordon Lenjosek-ECO1102B-negative
+• Not available outside of class 
+• Short, aggressive answers when contacted 
+• Leaves lecture meetings immediately after 
+• Not helpful or willing to assist students 
+• Rude and impatient 
+• Does not seem to know his slides very well 
+• Made learning Economics harder and more boring
+
+University of Ottawa-Gordon Lenjosek-ECO1102B-positive
+.
+
+- Professor Lenjosek is intimidating and opinionated, disregards requests for regrading and extra assignments
+- Tests are fair if students remember and understand thoroughly
+- Lectures are helpful and clear, slide notes are great and don't need to use the textbook
+- Aplia is a great way to gain added marks
+- Midterms and exams are fair and represent what is taught, professor is accessible and responds quickly to emails
+
+University of Ottawa-Iain McKenna-CDN1100-negative
+He's a great teacher and very knowledgeable.
+He makes sure to give students plenty of time to ask questions.
+He's very patient.
+He's very passionate about the material.
+
+• Great teacher and knowledgeable 
+• Makes sure to give students time to ask questions 
+• Very patient 
+• Very passionate about material 
+• Can get boring but insightful
+
+University of Ottawa-Iain McKenna-CDN1100-positive
+• His personality is amazing and he rocks all kinds of bow ties.
+• He is always ready to help out his students and is open to ideas.
+• Expect a lot of work and reading in this course.
+• He gives questions ahead of time and his exams are fair.
+• He is a great lecturer and his tests are fairly easy.
+
+University of Ottawa-Iain McKenna-PHI1103-negative
+He can be a bit intimidating, but overall he's a good professor.
+
+• As long as you keep up with the material, you can't do bad in his class.
+• His use of virtual campus is very helpful.
+• You must study or you will fail.
+• He can be a bit intimidating.
+• Overall he is a good professor.
+• Talks too much and classes can get boring.
+
+University of Ottawa-Iain McKenna-PHI1103-positive
+-Prof McKenna is a great teacher who makes learning interesting and enjoyable
+-He provides the materials online, saving students money
+-He gives study questions before tests
+-He is enthusiastic and cares about his students
+-He shows movies in class to enhance learning
+
+University of Ottawa-Iain McKenna-PHI2396-negative
+• Prof. McKenna was rude to students and TAs marked harshly.
+• Expectations for tests and papers were unclear.
+• Lectures were one long rambling conversation.
+• Midterm was extremely hard and textbook and lectures were useless.
+• Rubric for final exam was not posted until 2 days before due date, leaving students confused.
+
+University of Ottawa-Iain McKenna-PHI2396-positive
+.
+
+• Offers opportunities for extra credit, but does not always follow through
+• Lectures are unstructured, expectations are unclear, and instructions are often confusing
+• Midterm poorly reflected lecture content and was difficult
+• Textbook unrelated to bioethics
+• Professor is nice but classes are a mess; assignments and quizzes due weekly; case studies as part of final
+
+University of Ottawa-Iain McKenna-PHI2398-negative
+• Boring material and useless slides.
+• He was probably good in the past, but not this year.
+• He is passionate about the material.
+• People who complain about their marks are missing the point of courses like his.
+• Overall, students were not impressed.
+
+University of Ottawa-Iain McKenna-PHI2398-positive
+• Lots of reading required
+• Midterms are easy with reading
+• Participation counts for 10%
+• Final is a take-home paper
+• Fun professor with great discussions
+• Tests are chill, understanding concepts is key
+• Professor cares about teaching and is passionate about ethics
+• Fair grading
+• Great professor and favorite class
+
+University of Ottawa-Keith McCuaig-MUS2304-negative
+• Strict about plagiarism 
+• Difficult to get anything over a B+ 
+• TAs mark harshly 
+• Prof replies emails and is helpful if you reach out 
+• Keith instructing TAs to reduce class average every semester
+
+University of Ottawa-Keith McCuaig-MUS2304-positive
+• Professor McCuaig is one of the nicest people and is passionate about what he teaches. 
+• His assignments and exams are clear and marked fairly. 
+• The class material is interesting and presented well. 
+• The TA can be tough, but the professor is responsive to emails and accommodation requests.
+• The class is not an easy A, so don't take it if that's what you're looking for.
+
+University of Ottawa-Luc Poitras-BCH2333-negative
+• Rude and unhelpful in emails
+• Disrespectful and condescending
+• Lab portion is online due to covid
+• Filled with frustration and a feeling of being powerless
+• Got an A+ despite negative experience
+
+University of Ottawa-Luc Poitras-BCH2333-positive
+• Not polite with students
+• Disrespectful in emails
+• Accused student of plagiarism
+• Condescending in emails
+• Labs are fun and easy to do
+
+University of Ottawa-Luc Poitras-BCH3120-negative
+• Exams are too long and lectures are too fast 
+• Midterm average was below 50% 
+• Not nice in office hours 
+• Course requires memorization of molecules, reactions, and pathways 
+• Poor email etiquette and learning objectives
+
+University of Ottawa-Luc Poitras-BCH3120-positive
+• Content was interesting and slideshows were organized
+• Exams were application-based and hard, with specific rubrics
+• Dr. Poitras is a good professor for metabolism
+• Read textbook intros to understand course material
+• Exams are fair and straightforward, with hints given for potential questions
+
+University of Ottawa-Luc Poitras-BCH3170-negative
+• Tough grader 
+• Unsolvable exam questions 
+• Final was 3 hours long 
+• Evaluation was vague 
+• Blames problems on course 
+• Difficult class with decent lecturer 
+• Worst prof ever had 
+• Not very helpful during office hours 
+• Difficult to understand during lectures 
+• Goes through too much material too fast
+
+University of Ottawa-Luc Poitras-BCH3170-positive
+- Professor reads off slides and does not explain concepts in lectures
+- Grading is abysmal and exams are not hard, but require memorization and understanding of connections
+- Not approachable in class
+- Exams are fair and all necessary information is in lecture notes
+- Office is open almost everyday and professor is willing to help
+
+University of Ottawa-Luc Poitras-BCH3356-negative
+• Final was difficult but doable with studying. 
+• Luc Poitras is extremely rude despite preaching about proper email etiquette.
+• Lab manual and protocols are extremely difficult to follow and poorly written.
+• Very mean and ill-intentioned teacher.
+• Final exam is really difficult so maybe rewatch all the lectures to be prepared.
+
+University of Ottawa-Luc Poitras-BCH3356-positive
+• Lab is manageable but mostly TA interaction.
+• Heavy workload with lots of components to grade.
+• Unclear grading criteria and assignments.
+• Rude and unprofessional professor.
+• Poor email etiquette and no warning of changes.
+• Time consuming course with difficult assignments and reports.
+
+University of Ottawa-Luc Poitras-BCH3756-negative
+• Unhelpful professor who is rude to students
+• Heavy workload with 6 weekly hour labs, weekly homework and prelabs, 5 reports, and in-lab presentation every other week
+• Limited help during office hours
+• Grading is tough and bellcurved to maintain a certain grade average
+• Practical exam was difficult, final is not looked forward to
+
+University of Ottawa-Luc Poitras-BCH3756-positive
+• Good course and good prof; final was fun to do
+• Homework and reports had detailed tutorial docs
+• Midterm fair if homework done properly; final horrendous
+• Labs well organized; 6 hours a week for 1 course worth of credits
+• Small presentations, lab book keeping, etc. graded; theoretical aspect not so great
+
+University of Ottawa-Michael Mulvey-ADM2320-negative
+• Professor is passionate about marketing
+• Exams require studying and basic knowledge of the subject
+• Exams are not easy
+• Going through the book is a waste of time
+• Professor is a smart and hard marker
+
+University of Ottawa-Michael Mulvey-ADM2320-positive
+• Professor Mulvey is the best marketing prof at Telfer
+• His lectures are engaging, entertaining, and funny
+• Make sure to memorize the textbook for the midterm and final
+• Midterm and final are fair
+• Attend classes to benefit from the Mulvey experience
+
+University of Ottawa-Michael Mulvey-ADM3321-negative
+• Half of the grades have not been received or uploaded after a month since the final. 
+• This professor is not recommended as an elective due to heavy workload and group work. 
+• There are several assignments, a presentation, a midterm and a final. 
+• The professor is passionate about what he teaches and makes students want to pursue it. 
+• Heavy studying is required for the exams and readings.
+
+University of Ottawa-Michael Mulvey-ADM3321-positive
+.
+
+- Professor Mulvey is an enthusiastic, knowledgeable, and captivating lecturer. 
+- He is humorous, but his lectures are oversimplified and abstract. 
+- His course deliverables are fair and spread out with group projects, midterms, and final exams. 
+- He encourages reading the textbook to supplement his lectures. 
+- He is available to answer student questions and is dedicated to helping them succeed.
+
+University of Ottawa-Paula Sauveur-GNG4170-negative
+Summary:
+-Rude, unreasonable and lazy
+-Terrible grader, will refuse to talk to you over email and has no issue with insulting you
+-Forces students to buy an expensive and useless book
+-Do not take her course in English if you speak French
+-Gives little to no feedback for exams and assignments
+-Notes/slides are a complete mess and incoherent
+-Extremely condescending and disrespectful towards students
+
+University of Ottawa-Paula Sauveur-GNG4170-positive
+• Mandatory textbook written by professor that is identical to free laws found online.
+• Graded on a case study, a midterm, and a final.
+• Refuses to answer emails, teach, or mark.
+• Disrespectful towards her TA's and very full of herself.
+• Puts students on the spot with questions in front of the whole class.
+
+University of Ottawa-Paula Sauveur-GNG4570-negative
+• Worst professor in the northern hemisphere 
+• Extremely arrogant and unprofessional 
+• Poor communication with students 
+• Makes mistakes in translating French notes to English 
+• Very tough grader with a low average class grade
+
+University of Ottawa-Paula Sauveur-GNG4570-positive
+• Refuses to teach, mark, or answer student emails
+• Gives a 75 on the exam even if all questions are answered correctly
+• Called out two students in front of peers
+• Cancelled most classes and spent lectures talking about material unrelated to course
+• Very disorganized lectures and not respected by students
+
+University of Ottawa-Sam Alvaro-SOC-negative
+Gives plenty of extra credit opportunities.
+Very knowledgeable in the subject.
+Tests are difficult and long.
+Grading is very strict.
+
+• Very knowledgeable in the subject 
+• Grading is very strict 
+• Tests are difficult and long 
+• Goes off on random rants during class 
+• Gives plenty of extra credit opportunities
+
+University of Ottawa-Sam Alvaro-SOC-positive
+• All exams are online 
+• Talks about research without referencing anything 
+• Examples are super dated 
+• Exams focus on very specific details from lectures/textbook 
+• Class is fun, interesting and worth attending
+
+University of Ottawa-Sam Alvaro-SOC1105-negative
+• Not funny
+• Condescending and picks on students
+• Embarrasses students when they ask questions
+• Readings are difficult for 2nd year students
+• Answers not easily found in readings
+
+University of Ottawa-Sam Alvaro-SOC1105-positive
+• Interesting lectures and movies 
+• Open to in-class discussions 
+• Exams focus on 40+ page readings 
+• Technical difficulties throughout the semester 
+• Tricky multiple-choice exams
+
+University of Ottawa-Tanvir Quadir-ADM2304-negative
+Gives good feedback on assignments.
+Very patient and understanding.
+Takes the time to answer questions.
+Provides helpful resources.
+
+• Explains the topic very well.
+• Gives good feedback on assignments.
+• Very patient and understanding.
+• Takes the time to answer questions.
+• Provides helpful resources.
+
+University of Ottawa-Tanvir Quadir-ADM2304-positive
+• Professor Quadir goes the extra mile for students with great preparation and examples. 
+• Professor Tanvir is accessible and provides resources to help students succeed. 
+• Assignments and quizzes are easy to understand and complete. 
+• Midterms and Final are fair and review sessions are helpful. 
+• Professor Quadir is caring and accessible to students.
+
+University of Ottawa-Tanvir Quadir-HSS2381-negative
+• Positive reviews of professor
+• Enjoyed stats class, despite hating math
+• Lectures were a little boring, had to put on 2x speed
+• Pace and clarity of lectures was praised
+• Favourite professor during the semester
+
+University of Ottawa-Tanvir Quadir-HSS2381-positive
+.
+
+• Great professor for Intro to Stats 
+• Does a phenomenal job explaining concepts 
+• Very fair professor, teaches very well 
+• Tests are easy, wants students to succeed 
+• Goes out of his way to help students understand assignments and concepts
+
+University of Ottawa-Victor Emerson-HSS2381-negative
+• “He is a great professor who is always available to help.” 
+• “He is very knowledgeable and has a lot of experience in the field.” 
+• “His lectures are always interesting and engaging.” 
+• “He is very organized and keeps the class on track.” 
+• “He is always willing to answer questions and provide feedback.”
+
+• Available to help
+• Knowledgeable and experienced
+• Interesting and engaging lectures
+• Organized and keeps class on track
+• Willing to answer questions and provide feedback
+
+University of Ottawa-Victor Emerson-HSS2381-positive
+• Funny and encouraging
+• Open to questions and provides different examples
+• Well organized and experienced
+• Conveys subject matter well and takes time to ensure understanding
+• Makes stats course fun
+
+University of Ottawa-Vida Dujmovic-ITI1120-negative
+• Lectures are informative but assignments are tough and time consuming.
+• Tests are multiple choice and can be tricky.
+• Course material is basic with past experience, but can be a challenge without.
+• Requires effort to get an A, and the midterms and exams are difficult to study for.
+• Projects are harder than other sections and labs can be time consuming.
+
+University of Ottawa-Vida Dujmovic-ITI1120-positive
+Error: This model's maximum context length is 4097 tokens, however you requested 4604 tokens (3604 in your prompt; 1000 for the completion). Please reduce your prompt; or completion length.
+
+University of Ottawa-Wolfgang Koerner-POL2107-negative
+• Marking is arbitrary and grades are not justified
+• Little effort to teach, TA was rude
+• Lectures are dry, fast-paced and hard to follow
+• Final exam questions given weeks in advance
+• Expectations for assignments are clear
+
+University of Ottawa-Wolfgang Koerner-POL2107-positive
+Summary:
+-Professor Koerner is an amazing professor who is very accessible and provides reasonable grading criteria for papers
+-Lectures are dry and long, but he ends early most days and is humorous
+-Assignments consist of two essays and a final, all of which are easy
+-Cheat sheet allowed for final exam, questions given in advance
+-Very relaxed and informal, super easy marker
+
+University of Ottawa-Wolfgang Koerner-POL2108-negative
+• "He is an amazing professor, very knowledgeable and passionate about the subject." 
+• "He is an awesome professor and makes the class interesting." 
+• "He is an excellent teacher, very organized and helpful." 
+• "He is a great teacher and always willing to help."
+• "He is very knowledgeable and explains the material clearly."
+
+• He is an amazing, awesome, excellent, and great professor. 
+• He is very knowledgeable and passionate about the subject. 
+• He makes the class interesting and is very organized. 
+• He is helpful and always willing to assist. 
+• He explains the material clearly.
+
+University of Ottawa-Wolfgang Koerner-POL2108-positive
+• Outstanding professor 
+• Lectures perfectly prepare for final exam 
+• Easy marker 
+• Super funny and course material easy to understand 
+• Gives exam questions ahead of time 
+• Accommodating and extremely nice 
+• No blackboard, if you attend lectures you don't need books 
+• Rewarded for attending class and displaying enthusiasm 
+• Super easy class and assignments 
+• Midterm and final are take homes 
+• Teaches more about political thought than any professor before
+
+University of Ottawa-Wolfgang Koerner-POL2207-negative
+• Professor is aware that the course is boring.
+• Professor has a good sense of humour.
+• Professor cracks funny jokes during lectures.
+• Lectures involve Aristotle and Plato.
+• Course is difficult and requires a lot of reading.
+• Professor is organized and clear in his lectures.
+
+University of Ottawa-Wolfgang Koerner-POL2207-positive
+• Professor Koerner is easy-going, informative, and allows students to work at their own pace.
+• Classes are short and exams are easy, with a cheat sheet provided.
+• He is entertaining and humorous, and knows his material.
+• He is not for slackers, and expects students to do the readings.
+• Too much reading is required in too little time.
+
+University of Ottawa-Wolfgang Koerner-POL3102-negative
+• Lectures may be dry, but if texts are read in advance, class is understandable.
+• Assessments are 2 essays and final, but instructions are vague.
+• Koerner's class can be confusing.
+• Deadpan and cynical humor makes lectures bearable.
+• Readings not necessary, focus during lectures to get an A.
+
+University of Ottawa-Wolfgang Koerner-POL3102-positive
+• Take Koerner's classes whenever possible 
+• He is very accessible, understanding and accommodating 
+• He is helpful and cares about students 
+• Takes diligent notes for lectures for better comprehension 
+• Exam questions are given in advance and cheat sheets are allowed
 

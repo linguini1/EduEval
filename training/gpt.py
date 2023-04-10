@@ -33,11 +33,11 @@ def ask(prompt: str) -> str:
             prompt=prompt,
             temperature=0.5,
             max_tokens=MAX_TOKENS
-        )
+        ).choices[0]["text"]
     except InvalidRequestError as error:
         response = f"Error: {error.user_message}"
 
-    return response.choices[0]["text"]
+    return response
 
 
 # Main
