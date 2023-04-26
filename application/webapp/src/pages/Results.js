@@ -23,11 +23,19 @@ export default function Results() {
   const [search_prof, setSearchProf] = useState(null);
   const [search_course, setSearchCourse] = useState(null);
 
-  // Track feedback and trigger feedback fetching
+  // Track feedback
   const [feedback, setFeedback] = useState({
     negative: "This is the negative feedback.",
     positive: "This is the positive feedback.",
   });
+
+  useEffect(() => {
+    fetch(`${api}/${search_prof}/${search_course}`)
+      .then((response) => response.json())
+      .then((response_data) => {
+        setFeedback(response_data);
+      });
+  }, [search_prof, search_course]);
 
   // Create professor selection options everytime there is a new index
   useEffect(() => {
@@ -64,6 +72,7 @@ export default function Results() {
   // If the professor selection is change, re-request the course list based on the prof
   function professorChange(e) {
     setSearchProf(e.target.value);
+    setSearchCourse(index[e.target.value][0]); // Make first course in list the new search course to avoid unwanted combos
   }
 
   return (
