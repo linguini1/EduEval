@@ -57,33 +57,17 @@ def upload():
     return Response(status=200)  # Success
 
 
-@app.route("/courses", methods=["GET"])
+@app.route("/index", methods=["GET"])
 @cross_origin()
-def courses():
-    """API route for getting a list of all courses."""
-
-    # Empty index
-    if not PROF_INDEX:
-        return []
-
-    all_courses: list[str] = []
-    for prof, course_list in PROF_INDEX.items():
-        all_courses.extend(course_list)
-    return all_courses
+def prof_index():
+    return PROF_INDEX
 
 
-@app.route("/courses/<prof>", methods=["GET"])
+@app.route("/feedback/<prof>/<course>/", methods=["GET"])
 @cross_origin()
-def courses_by_prof(prof: str):
-    """API route for getting a list of all courses."""
-    return PROF_INDEX.get(prof, list())  # Returns empty list if prof is not found
-
-
-@app.route("/profs", methods=["GET"])
-@cross_origin()
-def profs():
-    """API route for getting a list of all professors."""
-    return list(PROF_INDEX.keys())
+def feedback(prof: str, course: str):
+    """Returns the feedback associated with this professor and course combination."""
+    return {"positive": "test", "negative": "test"}
 
 
 if __name__ == '__main__':
