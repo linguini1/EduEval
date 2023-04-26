@@ -63,11 +63,11 @@ def prof_index():
     return PROF_INDEX
 
 
-@app.route("/feedback/<prof>/<course>/", methods=["GET"])
-@cross_origin()
+@app.route("/feedback/<prof>/<course>", methods=["GET"])
+@cross_origin(origins="*")
 def feedback(prof: str, course: str):
     """Returns the feedback associated with this professor and course combination."""
-    return {"positive": "test", "negative": "test"}
+    return {"positive": prof, "negative": course}
 
 
 if __name__ == '__main__':

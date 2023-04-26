@@ -30,10 +30,11 @@ export default function Results() {
   });
 
   useEffect(() => {
-    fetch(`${api}/${search_prof}/${search_course}`)
+    fetch(`${api}/feedback/${search_prof}/${search_course}`)
       .then((response) => response.json())
       .then((response_data) => {
         setFeedback(response_data);
+        console.log(response_data);
       });
   }, [search_prof, search_course]);
 
@@ -61,6 +62,7 @@ export default function Results() {
           </option>
         ))
       );
+      setSearchCourse(index[search_prof][0]); // First course in list by default
     }
   }, [index_loading, search_prof]);
 
@@ -90,11 +92,19 @@ export default function Results() {
       <div className="container">
         <div className="feedback-box pos">
           <label htmlFor="posLabel"> Positive Feedback</label>
-          <textarea id="posLabel" readonly value={feedback.positive}></textarea>
+          <textarea
+            id="posLabel"
+            readOnly={true}
+            value={feedback.positive}
+          ></textarea>
         </div>
         <div className="feedback-box neg">
           <label htmlFor="negLabel">Negative Feedback</label>
-          <textarea id="negLabel" readonly value={feedback.negative}></textarea>
+          <textarea
+            id="negLabel"
+            readOnly={true}
+            value={feedback.negative}
+          ></textarea>
         </div>
       </div>
     </>
