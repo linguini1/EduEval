@@ -35,27 +35,39 @@ export default function Feedback() {
     }
   }
 
+  const fileUploader = (
+    <input
+      type="file"
+      id="upload-file"
+      name="upload-file"
+      onChange={handleFileUpload}
+      accept=".csv"
+      style={{ display: "none" }}
+    />
+  );
+
   return (
     <div className="feedback-container">
-      <div>
-        <label htmlFor="upload-file" className="upload-file">
-          Upload Review File:
-        </label>
-        <input
-          type="file"
-          id="upload-file"
-          name="upload-file"
-          onChange={handleFileUpload}
-          accept=".csv"
-          className="select-style"
-        />
-      </div>
-
-      <div className="button-container">
-        <button className="submitButton" type="submit" onClick={handleSubmit}>
-          Submit
+      <h1>Upload a review file</h1>
+      {fileUploader}
+      <div className="file-selection">
+        <p>{file ? file.name : "No file selected."}</p>
+        <button
+          className="button"
+          onClick={() => {
+            document.getElementById("upload-file").click();
+          }}
+        >
+          Browse...
         </button>
       </div>
+      <button
+        className="submitButton button"
+        type="submit"
+        onClick={handleSubmit}
+      >
+        Submit
+      </button>
     </div>
   );
 }

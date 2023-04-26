@@ -3,8 +3,10 @@ import { useFetch, api } from "../hooks/useFetch";
 import "./Results.css";
 
 export default function Results() {
-  const [course_options, setCourseOptions] = useState(<option>Loading</option>);
-  const [prof_options, setProfOptions] = useState(<option>Loading</option>);
+  const [course_options, setCourseOptions] = useState(
+    <option>Loading...</option>
+  );
+  const [prof_options, setProfOptions] = useState(<option>Loading...</option>);
 
   // Keep track of the select elements so we can access their values
   const prof_select = (
