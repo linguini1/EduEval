@@ -2,12 +2,11 @@
 __author__ = "Hamnah Qureshi"
 
 # Imports
-from processing import create_professor_index
+from processing import create_professor_index, analyze_sentiment, create_feedback_listing
 from flask import Flask, request, render_template, Response
 from flask_cors import CORS, cross_origin
 import pandas as pd
-from io import StringIO
-import json
+import threading
 
 # Constants
 STATIC_FOLDER: str = ".\\webapp\\build\\static"
@@ -29,6 +28,25 @@ app.config["CORS_HEADERS"] = "Content-Type"
 # Global variables
 PROF_INDEX: dict[str, list[str]] = dict()
 SURVEY_DATA: pd.DataFrame | None = None
+FEEDBACK: pd.DataFrame | None = None
+
+
+# Processing function
+def evaluate_feedback() -> None:
+    """Creates the listing of positive and negative feedback for every professor and their courses."""
+    global SURVEY_DATA
+    global FEEDBACK
+
+    if SURVEY_DATA is None:
+        print("No data to evaluate feedback.")
+        return
+
+    analyzed_data = analyze_sentiment(SURVEY_DATA)  # Associate with sentiments
+    analyzed_data = analyzed_data.groupby(["professor", "course"], group_keys=True)  # Group data
+    combos = list(analyzed_data.groups.keys())
+    analyzed_data = analyzed_data.apply(lambda x: x)  # Make searchable
+    FEEDBACK = create_feedback_listing(analyzed_data, combos)
+    print(feedback)
 
 
 # Webpage route
@@ -53,6 +71,9 @@ def upload():
     global PROF_INDEX
     SURVEY_DATA = pd.read_csv(file)  # type:ignore
     PROF_INDEX = create_professor_index(SURVEY_DATA)
+
+    # Create feedback listing in another thread
+    threading.Thread(target=evaluate_feedback).start()
 
     return Response(status=200)  # Success
 
