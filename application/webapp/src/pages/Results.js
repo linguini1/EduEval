@@ -11,17 +11,7 @@ export default function Results() {
   const [courses, courses_loading] = useFetch(`${api}/courses`);
 
   let course_options = [<option>Loading</option>];
-
-  let prof_options;
-  if (!profs_loading) {
-    prof_options = professors.map((prof) => (
-      <option key={prof} value={prof}>
-        {prof}
-      </option>
-    ));
-  } else {
-    prof_options = [<option>Loading</option>];
-  }
+  let prof_options = [<option>Loading</option>];
 
   useEffect(() => {
     console.log(courses);
@@ -34,20 +24,39 @@ export default function Results() {
     }
   }, [courses_loading]);
 
+  useEffect(() => {
+    if (!profs_loading) {
+      prof_options = professors.map((prof) => (
+        <option key={prof} value={prof}>
+          {prof}
+        </option>
+      ));
+    }
+    console.log(prof_options);
+  }, [profs_loading]);
+
   return (
-    <div className="container">
-      <label htmlFor="course-select" name="course">
-        Course Name:
-      </label>
-      <select id="course-select">{course_options}</select>
-      <div className="feedback-box pos">
-        <label htmlFor="posLabel"> Positive Feedback</label>
-        <textarea id="posLabel" readonly value={positiveFeedback}></textarea>
+    <>
+      <div className="selectors">
+        <div className="select-box">
+          <p>Professor:</p>
+          <select id="prof-select">{prof_options}</select>
+        </div>
+        <div className="select-box">
+          <p>Course:</p>
+          <select id="course-select">{course_options}</select>
+        </div>
       </div>
-      <div className="feedback-box neg">
-        <label htmlFor="negLabel"> Negative Feedback</label>
-        <textarea id="negLabel" readonly value={negativeFeedback}></textarea>
+      <div className="container">
+        <div className="feedback-box pos">
+          <label htmlFor="posLabel"> Positive Feedback</label>
+          <textarea id="posLabel" readonly value={positiveFeedback}></textarea>
+        </div>
+        <div className="feedback-box neg">
+          <label htmlFor="negLabel">Negative Feedback</label>
+          <textarea id="negLabel" readonly value={negativeFeedback}></textarea>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -36,7 +36,7 @@ export default function Feedback() {
   }
 
   return (
-    <div className="container">
+    <div className="feedback-container">
       <div>
         <label htmlFor="upload-file" className="upload-file">
           Upload Review File:
@@ -47,6 +47,7 @@ export default function Feedback() {
           name="upload-file"
           onChange={handleFileUpload}
           accept=".csv"
+          className="select-style"
         />
       </div>
 

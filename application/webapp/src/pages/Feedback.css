@@ -1,4 +1,4 @@
-.container {
+.feedback-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,15 +7,7 @@
   background-color: #fff;
 }
 
-label[for ="course-select"] {
-  margin-bottom: 8px;
-  font-size: 24px;
-  color: #666;
-  position: absolute;
-  top: 15%;
-  left: 37%;
-}
-.upload-file{
+.upload-file {
   margin-bottom: 8px;
   font-size: 24px;
   color: #666;
@@ -24,11 +16,7 @@ label[for ="course-select"] {
   left: 30%;
 }
 
-input[type="text"],
-input[type="email"],
-
-select
- {
+.select-style {
   position: absolute;
   top: 13%;
   left: 50%;
