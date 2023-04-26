@@ -106,8 +106,11 @@ def create_feedback_listing(grouped_data: pd.DataFrame, combinations: list) -> F
     for professor, course in combinations:
 
         # Storage for feedback summaries
-        feedback[professor] = dict()
-        feedback[professor][course] = dict()
+        if feedback.get(professor) is None:
+            feedback[professor] = dict()
+
+        if feedback[professor].get(course) is None:
+            feedback[professor][course] = dict()
 
         # Zip comments together with their sentiments
         comments = pd.concat([

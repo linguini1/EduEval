@@ -89,9 +89,16 @@ def prof_index():
 def feedback(prof: str, course: str):
     """Returns the feedback associated with this professor and course combination."""
 
-    courses = FEEDBACK.get(prof, dict()) if FEEDBACK is not None else dict()
-    summaries = courses.get(course)
+    print(FEEDBACK)
+    if FEEDBACK is not None:
+        courses = FEEDBACK.get(prof, dict())
+    else:
+        courses = dict()
 
+    print(courses)
+
+    summaries = courses.get(course)
+    print(summaries)
     if summaries is None:
         return {"positive": "No ratings.", "negative": "No ratings."}
 
