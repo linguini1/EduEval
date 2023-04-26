@@ -3,7 +3,7 @@ __author__ = "Hamnah Qureshi"
 
 # Imports
 from processing import create_professor_index
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, Response
 from flask_cors import CORS, cross_origin
 import pandas as pd
 from io import StringIO
@@ -26,6 +26,10 @@ cors = CORS(app)
 app.config["SERVER_NAME"] = f"localhost:{API_PORT}"
 app.config["CORS_HEADERS"] = "Content-Type"
 
+# Global variables
+PROF_INDEX: dict[str, list[str]] = dict()
+SURVEY_DATA: pd.DataFrame = None
+
 
 # Webpage route
 @app.route("/", methods=["GET"])
@@ -42,19 +46,44 @@ def upload():
 
     file = request.files.get("file")
     if file is None:
-        return 400  # Bad request (no file given)
+        return Response(status=400)  # Bad request (no file given)
 
-    # file.save('data/userdata.csv') #if we want to save the csv file
+    # Read csv as dataframe and create an index of professors to courses
+    global SURVEY_DATA
+    global PROF_INDEX
+    SURVEY_DATA = pd.read_csv(file)  # type:ignore
+    PROF_INDEX = create_professor_index(SURVEY_DATA)
 
-    df = pd.read_csv(file)  # type:ignore
-    prof_index = create_professor_index(df)
+    return Response(status=400)  # Success
 
-    print(df)
-    df.to_parquet(SURVEY_DATA_PATH)  # Save dataframe
-    with open(INDEX_FILE, 'w') as file:  # Save prof index for dropdowns
-        json.dump(prof_index, file)
 
-    return 200  # Success
+@app.route("/courses", methods=["GET"])
+@cross_origin(origins=REACT_HOST)
+def courses():
+    """API route for getting a list of all courses."""
+
+    # Empty index
+    if not PROF_INDEX:
+        return []
+
+    all_courses: list[str] = []
+    for prof, courses in PROF_INDEX.values():
+        all_courses.extend(courses)
+    return all_courses
+
+
+@app.route("/courses/<prof>", methods=["GET"])
+@cross_origin(origins=REACT_HOST)
+def courses_by_prof(prof: str):
+    """API route for getting a list of all courses."""
+    return PROF_INDEX.get(prof, list())  # Returns empty list if prof is not found
+
+
+@app.route("/profs", methods=["GET"])
+@cross_origin(origins=REACT_HOST)
+def profs():
+    """API route for getting a list of all professors."""
+    return list(PROF_INDEX.keys())
 
 
 if __name__ == '__main__':
