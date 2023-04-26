@@ -22,7 +22,7 @@ INDEX_FILE: str = "data/index.json"
 
 # Flask application
 app = Flask(__name__, static_folder=STATIC_FOLDER, template_folder=TEMPLATE_FOLDER)
-cors = CORS(app)
+cors = CORS(app, origins=REACT_HOST)
 app.config["SERVER_NAME"] = f"localhost:{API_PORT}"
 app.config["CORS_HEADERS"] = "Content-Type"
 
@@ -40,7 +40,7 @@ def index():
 
 # API Routes
 @app.route("/upload", methods=["POST"])
-@cross_origin(origins=REACT_HOST)
+@cross_origin()
 def upload():
     """API route for uploading CSV file with professorial ratings for one school."""
 
@@ -54,11 +54,11 @@ def upload():
     SURVEY_DATA = pd.read_csv(file)  # type:ignore
     PROF_INDEX = create_professor_index(SURVEY_DATA)
 
-    return Response(status=400)  # Success
+    return Response(status=200)  # Success
 
 
 @app.route("/courses", methods=["GET"])
-@cross_origin(origins=REACT_HOST)
+@cross_origin()
 def courses():
     """API route for getting a list of all courses."""
 
@@ -67,20 +67,20 @@ def courses():
         return []
 
     all_courses: list[str] = []
-    for prof, courses in PROF_INDEX.values():
-        all_courses.extend(courses)
+    for prof, course_list in PROF_INDEX.items():
+        all_courses.extend(course_list)
     return all_courses
 
 
 @app.route("/courses/<prof>", methods=["GET"])
-@cross_origin(origins=REACT_HOST)
+@cross_origin()
 def courses_by_prof(prof: str):
     """API route for getting a list of all courses."""
     return PROF_INDEX.get(prof, list())  # Returns empty list if prof is not found
 
 
 @app.route("/profs", methods=["GET"])
-@cross_origin(origins=REACT_HOST)
+@cross_origin()
 def profs():
     """API route for getting a list of all professors."""
     return list(PROF_INDEX.keys())
