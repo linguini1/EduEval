@@ -27,8 +27,8 @@ export default function Results() {
 
   // Track feedback
   const [feedback, setFeedback] = useState({
-    negative: "This is the negative feedback.",
-    positive: "This is the positive feedback.",
+    negative: ["This is the negative feedback."],
+    positive: ["This is the positive feedback."],
   });
 
   useEffect(() => {
@@ -83,6 +83,15 @@ export default function Results() {
     setSearchCourse(index[e.target.value][0]); // Make first course in list the new search course to avoid unwanted combos
   }
 
+  // Create bullet points from review sentences
+  function bullets(summaryList) {
+    return summaryList.map((bullet, index) => (
+      <li className="summary-bullet" key={index}>
+        {bullet}
+      </li>
+    ));
+  }
+
   return (
     <>
       <div className="selectors">
@@ -97,20 +106,12 @@ export default function Results() {
       </div>
       <div className="container">
         <div className="feedback-box pos">
-          <label htmlFor="posLabel"> Positive Feedback</label>
-          <textarea
-            id="posLabel"
-            readOnly={true}
-            value={feedback.positive}
-          ></textarea>
+          <h3>Positive Feedback</h3>
+          <div className="summary">{bullets(feedback.positive)}</div>
         </div>
         <div className="feedback-box neg">
-          <label htmlFor="negLabel">Negative Feedback</label>
-          <textarea
-            id="negLabel"
-            readOnly={true}
-            value={feedback.negative}
-          ></textarea>
+          <h3>Negative Feedback</h3>
+          <div className="summary">{bullets(feedback.negative)}</div>
         </div>
       </div>
     </>
