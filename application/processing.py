@@ -7,6 +7,7 @@ import pandas as pd
 from textblob import TextBlob
 from nltk.tokenize import sent_tokenize
 from summarizer import Summarizer
+import warnings
 
 # Constants
 SENTIMENTS: dict[int, str] = {
@@ -19,7 +20,7 @@ Feedback = dict[str, dict[str, dict[str, str]]]
 
 # Setup
 nltk.download("punkt")
-
+warnings.filterwarnings("ignore")  # Warnings are annoying
 
 # Functions
 def create_professor_index(df: pd.DataFrame) -> dict[str, list[str]]:

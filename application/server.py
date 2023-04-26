@@ -46,7 +46,7 @@ def evaluate_feedback() -> None:
     combos = list(analyzed_data.groups.keys())
     analyzed_data = analyzed_data.apply(lambda x: x)  # Make searchable
     FEEDBACK = create_feedback_listing(analyzed_data, combos)
-    print(feedback)
+    print(FEEDBACK)
 
 
 # Webpage route
@@ -88,7 +88,14 @@ def prof_index():
 @cross_origin(origins="*")
 def feedback(prof: str, course: str):
     """Returns the feedback associated with this professor and course combination."""
-    return {"positive": prof, "negative": course}
+
+    courses = FEEDBACK.get(prof, dict()) if FEEDBACK is not None else dict()
+    summaries = courses.get(course)
+
+    if summaries is None:
+        return {"positive": "No ratings.", "negative": "No ratings."}
+
+    return {"positive": summaries.get("positive"), "negative": summaries.get("negative")}
 
 
 if __name__ == '__main__':
