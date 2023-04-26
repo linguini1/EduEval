@@ -40,7 +40,7 @@ export default function Results() {
 
   // Create professor selection options everytime there is a new index
   useEffect(() => {
-    if (!index_loading) {
+    if (!index_loading && Object.keys(index).length !== 0) {
       setProfOptions(
         Object.keys(index).map((prof) => (
           <option key={prof} value={prof}>
@@ -54,7 +54,11 @@ export default function Results() {
 
   // Update the course selection options when there is a new index or when the prof selection has changed
   useEffect(() => {
-    if (!index_loading && search_prof !== null) {
+    if (
+      !index_loading &&
+      search_prof !== null &&
+      Object.keys(index).length !== 0
+    ) {
       setCourseOptions(
         index[search_prof].map((course) => (
           <option key={course} value={course}>

@@ -28,7 +28,7 @@ app.config["CORS_HEADERS"] = "Content-Type"
 
 # Global variables
 PROF_INDEX: dict[str, list[str]] = dict()
-SURVEY_DATA: pd.DataFrame = None
+SURVEY_DATA: pd.DataFrame | None = None
 
 
 # Webpage route
