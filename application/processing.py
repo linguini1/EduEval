@@ -15,12 +15,12 @@ SENTIMENTS: dict[int, str] = {
     1: "positive",
 }
 NUM_SENTENCES: int = 7
-Feedback = dict[str, dict[str, dict[str, str]]]
-
+Feedback = dict[str, dict[str, dict[str, list[str]]]]
 
 # Setup
 nltk.download("punkt")
 warnings.filterwarnings("ignore")  # Warnings are annoying
+
 
 # Functions
 def create_professor_index(df: pd.DataFrame) -> dict[str, list[str]]:
@@ -122,6 +122,6 @@ def create_feedback_listing(grouped_data: pd.DataFrame, combinations: list) -> F
         # Create summaries
         for sentiment, ratings in sentimented_comments.items():
             summary = model(ratings, num_sentences=NUM_SENTENCES)
-            feedback[professor][course][sentiment] = summary
+            feedback[professor][course][sentiment] = sentences(summary)
 
     return feedback

@@ -100,7 +100,7 @@ def feedback(prof: str, course: str):
     summaries = courses.get(course)
     print(summaries)
     if summaries is None:
-        return {"positive": "No ratings.", "negative": "No ratings."}
+        return {"positive": ["No feedback."], "negative": ["No feedback."]}
 
     return {"positive": summaries.get("positive"), "negative": summaries.get("negative")}
 
