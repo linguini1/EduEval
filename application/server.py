@@ -41,6 +41,7 @@ def evaluate_feedback() -> None:
         print("No data to evaluate feedback.")
         return
 
+    print("Starting feedback processing...")
     analyzed_data = analyze_sentiment(SURVEY_DATA)  # Associate with sentiments
     analyzed_data = analyzed_data.groupby(["professor", "course"], group_keys=True)  # Group data
     combos = list(analyzed_data.groups.keys())

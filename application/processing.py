@@ -8,6 +8,7 @@ from textblob import TextBlob
 from nltk.tokenize import sent_tokenize
 from summarizer import Summarizer
 import warnings
+from progress.bar import ChargingBar
 
 # Constants
 SENTIMENTS: dict[int, str] = {
@@ -102,6 +103,7 @@ def create_feedback_listing(grouped_data: pd.DataFrame, combinations: list) -> F
 
     feedback = dict()
     model = Summarizer()
+    bar = ChargingBar("Processing feedback", max=len(combinations))
 
     for professor, course in combinations:
 
@@ -123,5 +125,8 @@ def create_feedback_listing(grouped_data: pd.DataFrame, combinations: list) -> F
         for sentiment, ratings in sentimented_comments.items():
             summary = model(ratings, num_sentences=NUM_SENTENCES)
             feedback[professor][course][sentiment] = sentences(summary)
+
+        bar.next()  # Update progress
+    bar.finish()
 
     return feedback
