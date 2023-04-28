@@ -17,9 +17,4 @@ review during each semester's performance reviews. This model was originally hyp
 - Modules in `requirements.txt`
 
 ## Tools & Technologies
-<img height="52" width="52" src="application\webapp\public\python.svg"/>
-<img height="52" width="52" src="application\webapp\public\javascript.svg"/>
-<img height="52" width="52" src="application\webapp\public\html5.svg"/>
-<img height="52" width="52" src="application\webapp\public\css3.svg"/>
-<img height="62" width="102" src="application\webapp\public\flask.svg"/>
-<img height="52" width="52" src="application\webapp\public\react.svg"/>
+<img height="52" width="52" src="application\webapp\public\python.svg"/><img height="52" width="52" src="application\webapp\public\javascript.svg"/><img height="52" width="52" src="application\webapp\public\html5.svg"/><img height="52" width="52" src="application\webapp\public\css3.svg"/><img height="62" width="102" src="application\webapp\public\flask.svg"/><img height="52" width="52" src="application\webapp\public\react.svg"/>
